@@ -1,0 +1,16 @@
+<h1 class="p-2">Day-1</h1>
+<h3 [innerHTML]="question"></h3>
+
+<p>counter</p>
+<h1>{{count}}</h1>
+<button (click)="increament()">Increment</button>
+<button (click)="decrement()" [disabled]="count === 0">Decrement</button>
+<button (click)="reset()">Reset</button>
+
+
+<div>
+    <h2>{{ day.questionHeader }}</h2>
+    <p>{{ day.questionContent }}</p>
+    <pre>{{ day.exampleCode }}</pre>
+    <!-- Add more details as needed -->
+  </div>

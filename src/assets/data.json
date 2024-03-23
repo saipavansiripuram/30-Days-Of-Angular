@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "day": "Day-1",
+      "questionHeader": "Mouse leave & Mouse Over",
+      "questionContent": "How can Ram implement dynamic content visibility in his Angular application based on mouse events? Ram wants to create a feature where...",
+      "subtasks": [
+        "When the mouse enters a specific area, the count should increase.",
+        "When the mouse leaves the specific area, the count should decrease.",
+        "When a button is clicked, a div should be displayed."
+      ],
+      "exampleCode": "Sample code for day 1..."
+    
+    },
+    {
+      "id": 2,
+      "day": "Day-2",
+      "questionHeader": "Counter",
+      "questionContent": "Ram wants to implement the following features:.",
+      "subtasks": [
+        "Decrement button: Add a button to decrement the counter by 1.",
+        "Reset button: Add a button to reset the counter to 0.",
+        "Limit: Implement a limit for the counter so that it cannot go below 0."
+      ],
+      "exampleCode": "Sample code for day 2..."
+    },
+    {
+      "id": 3,
+      "day": "Day-3",
+      "questionHeader": "Question Header for Day 3",
+      "questionContent": "How can Ram implement a form in Angular that captures user details such as name, email, and age?",
+      "subtasks": [
+        "Name field: Accepts the user's name.",
+        "Email field: Accepts the user's email address.",
+        "Age field: Accepts the user's age."
+      ],
+      "exampleCode": "Sample code for day 2..."
+    },
+    {
+      "id": 4,
+      "day": "Day-4",
+      "questionHeader": "Question Header for Day 4",
+      "questionContent": "Content for Day 2...",
+      "exampleCode": "Sample code for day 2..."
+    },
+    {
+      "id": 5,
+      "day": "Day-5",
+      "questionHeader": "Fetching Data from External API",
+      "question": "Ram wants to fetch data from an external API and display it in an Angular application. How can this be done?",
+      "details": "Ram wants to display the data in a list format."
+    },
+    {
+      "id": 6,
+      "day": "Day-6",
+      "questionHeader": "Creating Reusable Components",
+      "question": "How can Ram create a reusable component in Angular that displays a card with an image and text?",
+      "details": "Ram wants the component to accept inputs for the image URL and text content."
+    },
+    {
+      "id": 7,
+      "day": "Day-7",
+      "questionHeader": "Creating Navigation Menu",
+      "question": "Ram wants to create a navigation menu in Angular with multiple links. How can this be achieved?",
+      "details": "Ram wants the navigation menu to include the following links:"
+    },
+    {
+      "id": 8,
+      "day": "Day-8",
+      "questionHeader": "Lazy Loading Modules",
+      "question": "How can Ram implement lazy loading for modules in an Angular application?",
+      "details": "Ram wants to optimize the application's performance by lazy loading modules."
+    },
+    {
+      "id": 9,
+      "day": "Day-9",
+      "questionHeader": "Adding Animations",
+      "question": "Ram wants to add animations to certain elements in an Angular application. How can this be accomplished?",
+      "details": "Ram wants to add animations to the following elements:"
+    },
+    {
+      "id": 10,
+      "day": "Day-10",
+      "questionHeader": "Implementing Internationalization (i18n)",
+      "question": "How can Ram implement internationalization (i18n) in an Angular application to support multiple languages?",
+      "details": "Ram wants the application to support English, Spanish, and French languages."
+    }
+  ]
+  

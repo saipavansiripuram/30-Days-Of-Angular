@@ -1,0 +1,16 @@
+<app-day-2 [questionHeader2]="questionHeader2"></app-day-2>
+<h1 class="p-2">Day-2</h1>
+<h3 [innerHTML]="question1"></h3>
+<h1 class="text-center text-3xl">{{count}}</h1>
+
+<div class="flex justify-around ">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"(mouseenter)="increment()">Hover ⬆</button>
+    
+    <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full" (mouseleave)="decrement()">Hover ⬇</button>
+</div>
+
+<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 ml-[25px] mt-20 rounded-full" (click)="handleShow()"> {{ isShow ? 'Hide Profile' : 'Show Profile' }}</button>
+
+<div *ngIf="isShow" class="bg-red-500 w-24 h-24 m-8 rounded-full text-center p-8" >
+    Hey
+</div>
