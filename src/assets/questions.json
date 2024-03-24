@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "question": "What is Angular?",
+    "short_Ans": "Angular is a front-end framework developed by Google for building web applications.",
+    "Long_Ans": [
+      "Angular is based on TypeScript and provides features like two-way data binding, dependency injection, and modular architecture.",
+      "It facilitates the development of single-page applications (SPAs) and supports the creation of reusable components."
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What are the key features of Angular?",
+    "short_Ans": "Angular offers features such as two-way data binding, dependency injection, modular architecture, and comprehensive testing capabilities.",
+    "Long_Ans": [
+      "Two-way data binding allows automatic synchronization between the model and the view.",
+      "Dependency injection promotes code maintainability, testability, and modularity by managing object creation and injection.",
+      "Modular architecture enables the development of large-scale applications by organizing code into reusable and manageable modules.",
+      "Comprehensive testing capabilities include unit testing, integration testing, and end-to-end testing using tools like Jasmine, Karma, and Protractor."
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between AngularJS and Angular?",
+    "short_Ans": "AngularJS refers to the first version of Angular (1.x), while Angular encompasses versions 2 and above.",
+    "Long_Ans": [
+      "AngularJS uses JavaScript, whereas Angular is based on TypeScript.",
+      "Angular introduced significant improvements over AngularJS, including improved performance, better tooling support, and enhanced features such as the component-based architecture."
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What is TypeScript, and why is it used in Angular?",
+    "short_Ans": "TypeScript is a superset of JavaScript that provides optional static typing and other features.",
+    "Long_Ans": [
+      "TypeScript enhances developer productivity and code quality by enabling features like static typing, interfaces, and advanced ECMAScript features.",
+      "Angular is built with TypeScript, which offers benefits such as improved tooling support, better code organization, and enhanced maintainability."
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Explain the Angular file structure.",
+    "short_Ans": "Angular projects follow a structured file layout with folders for components, modules, services, and other resources.",
+    "Long_Ans": [
+      "The 'src' folder contains the main source code of the Angular application.",
+      "Key folders include 'app' (for components, templates, and styles), 'assets' (for static assets like images and fonts), and 'environments' (for environment-specific configuration).",
+      "Angular CLI generates and manages the file structure automatically, simplifying project setup and maintenance."
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What are components in Angular?",
+    "short_Ans": "Components are the building blocks of Angular applications, encapsulating HTML templates, styles, and logic.",
+    "Long_Ans": [
+      "Components consist of a TypeScript class with associated HTML templates and CSS styles.",
+      "They facilitate code reuse, modularity, and maintainability by encapsulating functionality into self-contained units."
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What is data binding in Angular?",
+    "short_Ans": "Data binding is a mechanism in Angular that synchronizes data between the component and the view.",
+    "Long_Ans": [
+      "Angular supports one-way data binding (from component to view), event binding (from view to component), and two-way data binding (bidirectional synchronization between the component and the view).",
+      "Data binding simplifies UI development by eliminating the need for manual DOM manipulation and keeping the view in sync with the component's state."
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What is dependency injection in Angular?",
+    "short_Ans": "Dependency injection is a design pattern in Angular used to manage the creation and injection of dependent objects into a component or service.",
+    "Long_Ans": [
+      "Angular's dependency injection system allows components and services to declare their dependencies, which are then provided by Angular's injector.",
+      "Dependency injection promotes loose coupling, testability, and code reusability by decoupling the creation of objects from their usage."
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Explain Angular directives.",
+    "short_Ans": "Directives are Angular's way of extending HTML with custom behavior.",
+    "Long_Ans": [
+      "Angular provides built-in directives like ngIf, ngFor, and ngModel, as well as the ability to create custom directives.",
+      "Directives allow you to manipulate the DOM, attach event listeners, and apply dynamic behavior to elements, enhancing the functionality and interactivity of Angular applications."
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What is Angular CLI, and why is it used?",
+    "short_Ans": "Angular CLI (Command Line Interface) is a command-line tool used for scaffolding, building, and maintaining Angular applications.",
+    "Long_Ans": [
+      "Angular CLI automates common development tasks such as project setup, code generation, and deployment.",
+      "It provides commands for generating components, services, modules, and other Angular artifacts, streamlining the development process and enforcing best practices."
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What is Angular Router, and how does it work?",
+    "short_Ans": "Angular Router is a powerful routing library that enables navigation between different components and views in an Angular application.",
+    "Long_Ans": [
+      "Angular Router provides features like route configuration, parameterized routes, lazy loading, and guards for protecting routes.",
+      "It works by matching URL paths to route configurations and activating the corresponding components, allowing users to navigate seamlessly within the application."
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What is Angular CLI, and why is it used?",
+    "short_Ans": "Angular CLI is a command-line interface for scaffolding, building, and maintaining Angular applications.",
+    "Long_Ans": [
+      "It automates common development tasks like project setup, code generation, and deployment.",
+      "It provides a consistent project structure and build pipeline.",
+      "It streamlines development workflow and enhances productivity."
+    ]
+  },
+  {
+    "id": 13,
+    "question": "What are Angular modules?",
+    "short_Ans": "Angular modules are containers for organizing the application into cohesive blocks of functionality.",
+    "Long_Ans": [
+      "They group related components, directives, pipes, and services.",
+      "They promote modular architecture and lazy loading.",
+      "They enable code separation, encapsulation, and reusability."
+    ]
+  },
+  {
+    "id": 14,
+    "question": "What is Angular router, and how does it work?",
+    "short_Ans": "Angular router is a library that enables navigation between different components.",
+    "Long_Ans": [
+      "It defines routes with associated components and URLs.",
+      "It supports lazy loading for optimizing application loading time.",
+      "It provides features like route guards, resolvers, and child routes."
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What are Angular services, and how are they different from components?",
+    "short_Ans": "Angular services are singleton objects used to organize and share business logic, data, or functionality across an application. They are different from components in that they are not directly associated with the DOM or UI rendering.",
+    "Long_Ans": [
+      "Services encapsulate reusable logic that can be shared across multiple components.",
+      "They facilitate code reuse, maintainability, and separation of concerns.",
+      "Services are typically injected into components or other services using Angular's dependency injection system."
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Explain Angular directives and their types.",
+    "short_Ans": "Angular directives are markers on a DOM element that tell Angular's HTML compiler to attach a specified behavior to that DOM element or transform the DOM element and its children. Angular supports three types of directives: component directives, structural directives, and attribute directives.",
+    "Long_Ans": [
+      "Component directives: Component directives are the most common type of directives in Angular. They are used to create reusable UI components with their own templates, styles, and behavior.",
+      "Structural directives: Structural directives alter the layout of the DOM by adding, removing, or manipulating elements. Examples include *ngIf, *ngFor, and *ngSwitch.",
+      "Attribute directives: Attribute directives change the appearance or behavior of a DOM element by manipulating its attributes. Examples include ngClass, ngStyle, and ngModel."
+    ]
+  },
+  {
+    "id": 17,
+    "question": "What is Angular routing, and how does it work?",
+    "short_Ans": "Angular routing is a mechanism for navigating between different components in an Angular application. It allows users to navigate to different views or pages without reloading the entire application.",
+    "Long_Ans": [
+      "Angular router is a built-in library that provides a service and a set of directives for configuring navigation paths.",
+      "Routes are defined using route configurations that map URLs to components.",
+      "When a user navigates to a route, Angular router dynamically updates the DOM to display the corresponding component."
+    ]
+  },
+  {
+    "id": 18,
+    "question": "What are Angular forms, and how are they implemented?",
+    "short_Ans": "Angular forms are used to collect and validate user input in Angular applications. They enable developers to create interactive and responsive user interfaces for data entry and submission.",
+    "Long_Ans": [
+      "Angular forms can be template-driven or reactive (model-driven).",
+      "Template-driven forms rely on directives and template-driven validation to handle form data and validation logic.",
+      "Reactive forms use reactive programming principles and FormControl, FormGroup, and FormArray classes to manage form data and validation."
+    ]
+  },
+  {
+    "id": 19,
+    "question": "What are Angular lifecycle hooks? Explain some commonly used lifecycle hooks.",
+    "short_Ans": "Angular lifecycle hooks are methods that allow developers to tap into the lifecycle of Angular components and perform actions at specific stages. Some commonly used lifecycle hooks include ngOnInit, ngOnDestroy, and ngOnChanges.",
+    "Long_Ans": [
+      "ngOnInit: This hook is called after Angular has initialized all data-bound properties of a component. It is commonly used to perform initialization logic, such as fetching initial data from a server.",
+      "ngOnDestroy: This hook is called just before Angular destroys the component. It is used to clean up resources, such as unsubscribing from observables or releasing memory.",
+      "ngOnChanges: This hook is called whenever the input properties of a component change. It provides information about the changes and is commonly used to respond to input changes and update the component's state."
+    ]
+  },
+  {
+    "id": 20,
+    "question": "How can you handle errors in Angular applications?",
+    "short_Ans": "In Angular, errors can be handled using try-catch blocks, error handling middleware, or global error handlers. Additionally, Angular provides error handling mechanisms such as catchError operators in observables and error interceptors for HTTP requests.",
+    "Long_Ans": [
+      "Try-catch blocks: Developers can use try-catch blocks to catch synchronous errors within their code and handle them accordingly.",
+      "Error handling middleware: Middleware functions can be used to catch errors in asynchronous operations, such as HTTP requests or promises, and provide centralized error handling logic.",
+      "Global error handlers: Angular applications can define global error handlers to catch unhandled errors and display appropriate error messages to users.",
+      "Angular-specific mechanisms: Angular provides catchError operators in observables to handle errors within observable streams and error interceptors for intercepting and handling HTTP errors globally."
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Explain Angular pipes and some built-in pipes provided by Angular.",
+    "short_Ans": "Angular pipes are used to transform data in templates. They take input data and return transformed output data. Angular provides several built-in pipes, including DatePipe, UpperCasePipe, LowerCasePipe, and DecimalPipe.",
+    "Long_Ans": [
+      "DatePipe: Converts a date object or a string into a formatted date string based on the provided format.",
+      "UpperCasePipe: Converts a string to uppercase.",
+      "LowerCasePipe: Converts a string to lowercase.",
+      "DecimalPipe: Formats a number as a decimal number, with optional digit info for minimum and maximum digits before and after the decimal point."
+    ]
+  },
+  {
+    "id": 22,
+    "question": "What are Angular interceptors? How are they used?",
+    "short_Ans": "Angular interceptors are middleware-like services that can be used to intercept HTTP requests and responses. They provide a way to modify or handle HTTP requests and responses globally across an Angular application.",
+    "Long_Ans": [
+      "Interceptors are defined as classes that implement the HttpInterceptor interface and provide an intercept() method.",
+      "The intercept() method receives the request or response as input and returns an Observable of HttpEvent.",
+      "Interceptors can be used for various purposes, such as adding headers to requests, logging requests and responses, handling errors, and transforming responses."
+    ]
+  },
+  {
+    "id": 23,
+    "question": "What is Angular testing? How can you perform unit testing and end-to-end testing in Angular?",
+    "short_Ans": "Angular testing involves writing and executing tests to ensure the correctness and reliability of Angular applications. Unit testing is performed to test individual units or components in isolation, while end-to-end testing involves testing the entire application from start to finish.",
+    "Long_Ans": [
+      "Unit testing in Angular is typically performed using testing frameworks like Jasmine and testing utilities provided by Angular's TestBed.",
+      "TestBed is used to configure and create instances of components for testing, and Jasmine is used to write test cases and assertions.",
+      "End-to-end testing in Angular is performed using tools like Protractor, which automates browser interactions and simulates user behavior to test application flows and functionality.",
+      "Protractor interacts with the application in the same way as a user would, allowing developers to test application behavior in a real-world scenario."
+    ]
+  },
+  {
+    "id": 24,
+    "question": "What is Angular Material? How can you integrate Angular Material into an Angular application?",
+    "short_Ans": "Angular Material is a UI component library for Angular applications that provides a set of reusable and accessible UI components following the Material Design guidelines. It includes components such as buttons, cards, forms, dialogs, and data tables.",
+    "Long_Ans": [
+      "To integrate Angular Material into an Angular application, developers need to install Angular Material and Angular CDK using npm or yarn.",
+      "They can then import the required Angular Material modules in the application's root module (AppModule) and configure the application to use Angular Material components and styles.",
+      "Once Angular Material is integrated, developers can use Angular Material components in their application templates by including the corresponding HTML tags and attributes."
+    ]
+  },
+  {
+    "id": 25,
+    "question": "What are Angular guards? How can you implement route guards in Angular?",
+    "short_Ans": "Angular guards are used to protect routes and control navigation based on certain conditions, such as user authentication, authorization, and route activation or deactivation. They allow developers to implement logic to determine whether a user should be allowed to navigate to or leave a particular route.",
+    "Long_Ans": [
+      "Angular provides several types of guards, including canActivate, canActivateChild, canLoad, and canDeactivate.",
+      "Route guards are implemented as classes that implement the CanActivate, CanActivateChild, CanLoad, or CanDeactivate interfaces.",
+      "Developers can define guard logic within these classes to perform checks and return true or false to allow or deny navigation based on the defined conditions."
+    ]
+  },
+  {
+    "id": 26,
+    "question": "What is Angular Universal? How does it help in server-side rendering (SSR) of Angular applications?",
+    "short_Ans": "Angular Universal is a technology that allows developers to render Angular applications on the server side, providing better performance, search engine optimization (SEO), and user experience. It pre-renders Angular applications on the server and sends the pre-rendered HTML to the client, which improves initial load times and ensures content is indexed by search engines.",
+    "Long_Ans": [
+      "Angular Universal supports server-side rendering (SSR) of Angular applications, enabling them to be rendered on the server before being sent to the client.",
+      "By pre-rendering Angular applications on the server, Angular Universal improves performance by reducing time to first paint (TTFP) and time to interactive (TTI), leading to faster page loads and better user experience.",
+      "Server-side rendering also improves search engine optimization (SEO) by providing search engine crawlers with pre-rendered HTML content, which can be indexed and ranked more effectively."
+    ]
+  },
+  {
+    "id": 27,
+    "question": "What is Angular Ivy? How does it improve Angular performance?",
+    "short_Ans": "Angular Ivy is the next-generation rendering engine for Angular applications. It is designed to improve bundle size, compilation times, and runtime performance by enabling tree shaking, differential loading, and improved rendering optimizations.",
+    "Long_Ans": [
+      "Angular Ivy is built with a focus on improving the developer experience and application performance.",
+      "One of the key features of Angular Ivy is tree shaking, which removes unused code from the final bundle, resulting in smaller bundle sizes and faster load times.",
+      "Additionally, Ivy introduces differential loading, allowing modern browsers to load smaller, more optimized bundles, while older browsers receive a larger bundle with polyfills.",
+      "Ivy also enhances template type-checking and compilation, resulting in faster compilation times and better type checking during development.",
+      "Overall, Angular Ivy improves both the developer experience and the performance of Angular applications, making them smaller, faster, and more efficient."
+    ]
+  },
+  {
+    "id": 28,
+    "question": "How can you optimize performance in Angular applications?",
+    "short_Ans": "Performance optimization in Angular applications can be achieved through various techniques such as lazy loading, code splitting, tree shaking, AOT compilation, caching, and optimizing rendering.",
+    "Long_Ans": [
+      "Lazy loading: Load only the essential parts of the application upfront and defer the loading of non-essential modules until they are required.",
+      "Code splitting: Split the application into smaller chunks or modules and load them asynchronously to reduce initial bundle size and improve load times.",
+      "Tree shaking: Remove unused code from the final bundle using tree shaking techniques, resulting in smaller bundle sizes and faster load times.",
+      "AOT compilation: Ahead-of-time (AOT) compilation compiles templates and components during build time, resulting in faster rendering and improved runtime performance.",
+      "Caching: Implement caching strategies to store frequently accessed data and assets locally, reducing network requests and improving load times.",
+      "Optimizing rendering: Minimize DOM manipulation, use trackBy with ngFor to improve rendering performance, and avoid unnecessary change detection cycles to optimize rendering performance."
+    ]
+  },
+  {
+    "id": 29,
+    "question": "What are Angular Schematics? How can you use them?",
+    "short_Ans": "Angular Schematics are code generators that automate common development tasks such as creating components, services, modules, and other Angular artifacts. They provide a way to scaffold, modify, and generate code based on predefined templates and blueprints.",
+    "Long_Ans": [
+      "Angular Schematics are built using the Angular DevKit and provide a structured way to generate and modify code in Angular projects.",
+      "Developers can use Angular Schematics to create custom schematics or use existing schematics provided by the Angular community or third-party libraries.",
+      "To use Angular Schematics, developers can run schematics commands using the Angular CLI or directly invoke schematics programmatically from their code.",
+      "Angular Schematics automate repetitive tasks and enforce best practices, improving development productivity and code consistency across projects."
+    ]
+  },
+  {
+    "id": 30,
+    "question": "What are Angular decorators? Explain some commonly used decorators in Angular.",
+    "short_Ans": "Angular decorators are functions that modify the behavior of classes, methods, or properties in Angular applications. They are used to add metadata and provide additional functionality to Angular components, directives, services, and modules.",
+    "Long_Ans": [
+      "NgModule: Used to define Angular modules and configure their metadata, such as declarations, imports, exports, and providers.",
+      "Component: Used to define Angular components by attaching metadata such as selector, template, styles, and providers.",
+      "Directive: Used to define Angular directives, which add behavior to elements in the DOM. Directives can be structural or attribute directives.",
+      "Injectable: Used to define Angular services and mark them as injectable, allowing them to be injected into other components or services using Angular's dependency injection system.",
+      "Input: Used to define input properties in Angular components, allowing data to be passed from parent to child components.",
+      "Output: Used to define output properties in Angular components, allowing child components to emit events to parent components.",
+      "HostListener: Used to listen for DOM events on host elements and execute a specified method when the event occurs.",
+      "HostBinding: Used to bind a property of the host element to a property of the directive or component class.",
+      "ViewChild and ViewChildren: Used to query and access child components or elements in Angular templates."
+    ]
+  }
+
+]

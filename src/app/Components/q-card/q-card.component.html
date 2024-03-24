@@ -1,0 +1,14 @@
+<div class="relative max-w-[19rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-gray-800 hover:bg-gray-900 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none" *ngFor="let question of questions">
+  <div class="mb-2 flex items-center gap-6" >
+    <a
+      routerLink="/"
+      class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500 text-white"
+    >
+      {{ question.question }}
+    </a>
+  </div>
+  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased hover:text-pink-200">
+    {{ question.short_Ans }}
+  </p>
+  <div class="text-end text-white">more</div>
+</div>
