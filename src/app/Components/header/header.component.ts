@@ -10,7 +10,11 @@ import { RouterLink } from "@angular/router";
 })
 export class HeaderComponent {
   isMenuOpen: boolean = false;
+  isDarkTheme:boolean = false;
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  toggleTheme(){
+    this.isDarkTheme = !this.isDarkTheme;
   }
 }
