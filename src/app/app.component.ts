@@ -4,13 +4,14 @@ import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { Day1Component } from "./Components/day-1/day-1.component";
 import { MainComponent } from "./Components/main/main.component";
 import { HeaderComponent } from "./Components/header/header.component";
+import { FooterComponent } from "./Components/footer/footer.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Day1Component, RouterLink, RouterModule, NgFor, MainComponent, HeaderComponent]
+    imports: [CommonModule, RouterOutlet, Day1Component, RouterLink, RouterModule, NgFor, MainComponent, HeaderComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'Angular';
