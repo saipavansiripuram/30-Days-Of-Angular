@@ -27,14 +27,27 @@
     {
       "id": 3,
       "day": "Day-3",
-      "questionHeader": "Question Header for Day 3",
-      "questionContent": "How can Ram implement a form in Angular that captures user details such as name, email, and age?",
-      "subtasks": [
-        "Name field: Accepts the user's name.",
-        "Email field: Accepts the user's email address.",
-        "Age field: Accepts the user's age."
+      "questionHeader": "Angular Timer Application",
+      "questionContent": "Ram is learning Angular and wants to create a simple timer application similar to a React timer application he saw. The timer application should start counting from zero and increment upwards, stopping at a user-defined number of seconds. Ram has seen a similar React implementation and wants to create it using Angular. Help him implement this timer application using Angular.",
+      "requirements": [
+        {
+          "title": "Timer Input Field",
+          "description": "Create an input field where users can enter the number of seconds for the timer."
+        },
+        {
+          "title": "Start and Stop Buttons",
+          "description": "Add two buttons to the page:\n- A start button. This button will start the timer.\n- A stop button. This button will stop the timer.\nEnsure that only one of these buttons is enabled at any time. The start button should be enabled by default."
+        },
+        {
+          "title": "Timer Display",
+          "description": "Include a div element to display the current timer count.\nThe timer should initially display 0."
+        },
+        {
+          "title": "Button Functionality",
+          "description": "Implement the functionality for the start and stop buttons:\n- Clicking start should begin the timer and disable the start button while enabling the stop button.\n- Clicking stop should pause the timer and toggle the button states back."
+        }
       ],
-      "exampleCode": "Sample code for day 2..."
+      "deliverables": "Ram needs you to provide him with an Angular project that fulfills the above requirements. Ensure that the timer application is functional and follows Angular best practices."
     },
     {
       "id": 4,

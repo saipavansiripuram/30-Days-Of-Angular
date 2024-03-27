@@ -4,8 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-day-1',
   standalone: true,
   imports: [],
-  templateUrl: './day-1.component.html',
-  styleUrl: './day-1.component.css',
+  templateUrl: './day-1.component.html'
 })
 export class Day1Component {
   @Input() day: any;

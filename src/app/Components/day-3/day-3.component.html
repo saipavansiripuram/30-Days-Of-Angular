@@ -1,0 +1,17 @@
+
+<h1>Heelo</h1>
+<div *ngFor="let q of question" class="question-container">
+    <h2>{{ q.questionHeader }}</h2>
+    <p>{{ q.questionContent }}</p>
+  
+    <div *ngFor="let requirement of q.requirements" class="requirement">
+      <h3>{{ requirement.title }}</h3>
+      <p>{{ requirement.description }}</p>
+    </div>
+  
+    <!-- <div *ngIf="q.deliverables">
+      <h3>Deliverables:</h3>
+      <p>{{ q.deliverables }}</p>
+    </div> -->
+  </div>
+  

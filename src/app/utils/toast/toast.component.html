@@ -1,0 +1,27 @@
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md">
+    <div class="max-w-l bg-white border border-gray-200 rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex p-4">
+            <div class="flex-shrink-0">
+                <button type="button" class="absolute top-3 end-3 inline-flex flex-shrink-0 justify-center items-center size-5 rounded-lg text-gray-800 opacity-50 hover:opacity-100 focus:outline-none focus:opacity-100 dark:text-white" (click)="close()">
+                    <span class="sr-only">Close</span>
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="ms-4 me-5">
+                <h3 class="text-gray-800 font-medium text-sm dark:text-white">
+                    <span class="font-semibold">{{ title }}</span>
+                </h3>
+                <div class="mt-1 text-sm text-gray-600 dark:text-gray-400 text-justify">
+                     <ul class="list-disc">
+                        <li *ngFor="let point of message">{{ point }}</li>
+                    </ul>
+                </div>
+                <!-- Additional content can go here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div [class.blur]="toastOpen" class="fixed inset-0 z-20 w-full bg-blue-200 bg-opacity-80" (click)="close()"> </div>
