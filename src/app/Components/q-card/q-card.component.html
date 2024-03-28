@@ -1,5 +1,5 @@
 <app-toast [title]="selectedQuestionDetails?.question" [message]="selectedQuestionDetails?.Long_Ans" *ngIf="selectedQuestionDetails" (closeToast)="selectedQuestionDetails = null"></app-toast>
-<div class="relative max-w-[19rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-gray-800 hover:bg-gray-900 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none  w-full max-w-md" *ngFor="let question of questions" >
+<div class="relative whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-gray-800 hover:bg-gray-900 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none  w-full max-w-md  mb-2" *ngFor="let question of questions" >
   <div class="mb-2 flex items-center gap-6"  >
     <a
     (click)="showQuestionDetails(question.id)"

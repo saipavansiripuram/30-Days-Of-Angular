@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { HomeCardComponent } from "../home-card/home-card.component";
+import { isPlatformBrowser } from '@angular/common';
+import AOS from "aos";
 
 @Component({
     selector: 'app-main',
@@ -8,6 +10,12 @@ import { HomeCardComponent } from "../home-card/home-card.component";
     styleUrl: './main.component.css',
     imports: [HomeCardComponent]
 })
-export class MainComponent {
-
+export class MainComponent implements OnInit  {
+    constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+    
+   ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
+  }
 }

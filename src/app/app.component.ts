@@ -13,8 +13,12 @@ import { ToastComponent } from "./utils/toast/toast.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Day1Component, RouterLink, RouterModule, NgFor, MainComponent, HeaderComponent, FooterComponent, Day3Component, ToastComponent]
+    imports: [CommonModule, RouterOutlet, Day1Component, RouterLink, RouterModule, NgFor, MainComponent, HeaderComponent, FooterComponent, Day3Component, ToastComponent ]
 })
 export class AppComponent {
   title = 'Angular';
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+  }
 }
+
