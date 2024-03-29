@@ -1,20 +1,33 @@
-<app-toast [title]="selectedQuestionDetails?.question" [message]="selectedQuestionDetails?.Long_Ans" *ngIf="selectedQuestionDetails" (closeToast)="selectedQuestionDetails = null"></app-toast>
-<div class="relative whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-gray-800 hover:bg-gray-900 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none  w-full max-w-md  mb-2" *ngFor="let question of questions" >
-  <div class="mb-2 flex items-center gap-6"  >
+<app-toast
+  [title]="selectedQuestionDetails?.question"
+  [message]="selectedQuestionDetails?.Long_Ans"
+  *ngIf="selectedQuestionDetails"
+  (closeToast)="selectedQuestionDetails = null"
+></app-toast>
+<div
+  class="relative whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-gray-800 hover:bg-gray-900 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none w-full max-w-md mb-2"
+  *ngFor="let question of questions"
+  data-aos="flip-up"
+>
+  <div class="mb-2 flex items-center gap-6">
     <a
-    (click)="showQuestionDetails(question.id)"
+      (click)="showQuestionDetails(question.id)"
       class="block font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased transition-colors hover:text-pink-500 text-white"
     >
-    {{question.id}}.
-    {{  question.question }}
+      {{ question.id }}.
+      {{ question.question }}
     </a>
   </div>
-  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased hover:text-pink-200" (click)="showQuestionDetails(question.id)">
+  <p
+    class="block font-sans text-sm font-normal leading-normal text-white antialiased hover:text-pink-200"
+    (click)="showQuestionDetails(question.id)"
+  >
     {{ question.short_Ans }}
   </p>
-  <div class="text-end text-white hover:text-green-400 hover:underline cursor-pointer" (click)="showQuestionDetails(question.id)">
-  Read  
+  <div
+    class="text-end text-white hover:text-green-400 hover:underline cursor-pointer"
+    (click)="showQuestionDetails(question.id)"
+  >
+    Read
   </div>
- 
-  
 </div>

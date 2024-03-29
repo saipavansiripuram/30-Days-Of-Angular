@@ -15,7 +15,7 @@ export class MainComponent implements OnInit  {
     
    ngOnInit(): void {
     // if (isPlatformBrowser(this.platformId)) {
-    //   AOS.init();
+      AOS.init();
     // }
   }
 }
