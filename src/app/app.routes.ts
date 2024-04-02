@@ -8,6 +8,7 @@ import { DownloadComponent } from "./pages/download/download.component";
 import { Day3Component } from "./Components/day-3/day-3.component";
 import { NgModule } from '@angular/core';
 import { QuestionsAdvComponent } from "./pages/questions-adv/questions-adv.component";
+import { ProjectsComponent } from "./pages/projects/projects.component";
 
 export const routes: Routes = [
   { path: "", component: MainComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: "question", component: QuestionHomeComponent },
   { path: "questionadv", component: QuestionsAdvComponent },
   { path: "download", component: DownloadComponent },
+  { path: "projects", component: ProjectsComponent },
   { path: "day1", component: Day1Component },
   { path: "day/:id", component: Day1Component },
   { path: "day2", component: Day2Component },

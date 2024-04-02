@@ -1,0 +1,8 @@
+<div class="flex flex-col gap-6" *ngFor="let proj of project">
+    <div class=" whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-black p-4 font-sans text-white text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none mb-4"  data-aos="zoom-out-up">
+      <div class="m-2">
+        <h1 class="hover:text-pink-500">{{ proj.id }}. {{ proj.projectname }}</h1>
+        <h3 class=" hover:text-stone-400 pl-6 ">{{ proj.description }}</h3>
+      </div>
+    </div>
+  </div>
