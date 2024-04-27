@@ -51,8 +51,11 @@
     "question": "What is TypeScript, and why is it used in Angular?",
     "short_Ans": "TypeScript is a superset of JavaScript that provides optional static typing and other features.",
     "Long_Ans": [
+      "TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript",
       "TypeScript enhances developer productivity and code quality by enabling features like static typing, interfaces, and advanced ECMAScript features.",
-      "Angular is built with TypeScript, which offers benefits such as improved tooling support, better code organization, and enhanced maintainability."
+      "Can define custom data types and make it strictly typed language.",
+      "Angular is built with TypeScript, which offers benefits such as improved tooling support, better code organization, and enhanced maintainability.",
+      "Current version of TypeScript is 5 (2024)."
     ]
   },
   {
@@ -71,7 +74,9 @@
     "short_Ans": "Components are the building blocks of Angular applications, encapsulating HTML templates, styles, and logic.",
     "Long_Ans": [
       "Components consist of a TypeScript class with associated HTML templates and CSS styles.",
-      "They facilitate code reuse, modularity, and maintainability by encapsulating functionality into self-contained units."
+      "They facilitate code reuse, modularity, and maintainability by encapsulating functionality into self-contained units.",
+      "Components are subset of directives.",
+      "Unlike directives, components always have a template and only one component can be instantiated per an element in a template."
     ]
   },
   {
@@ -116,7 +121,17 @@
     "short_Ans": "Angular CLI (Command Line Interface) is a command-line tool used for scaffolding, building, and maintaining Angular applications.",
     "Long_Ans": [
       "Angular CLI automates common development tasks such as project setup, code generation, and deployment.",
-      "It provides commands for generating components, services, modules, and other Angular artifacts, streamlining the development process and enforcing best practices."
+      "It provides commands for generating components, services, modules, and other Angular artifacts, streamlining the development process and enforcing best practices.",
+      "Below are the list of few commands, which will come handy while creating angular projects.",
+      "Creating New Project: ng new ",
+      "ng generate class my-new-class: add a class to your application ",
+      "ng generate component my-new-component: add a component to your application",
+      "ng generate directive my-new-directive: add a directive to your application",
+      "ng generate enum my-new-enum: add an enum to your application",
+      "ng generate module my-new-module: add a module to your application",
+      "ng generate pipe my-new-pipe: add a pipe to your application",
+      "ng generate service my-new-service: add a service to your application",
+      "Running the Project: ng serve"
     ]
   },
   {
@@ -145,7 +160,15 @@
     "Long_Ans": [
       "They group related components, directives, pipes, and services.",
       "They promote modular architecture and lazy loading.",
-      "They enable code separation, encapsulation, and reusability."
+      "They enable code separation, encapsulation, and reusability.",
+      "The application is divided into separate modules to separate the functionality of your application for eg Users module and dashboard.",
+      "Modules are created using decorator `NgModule` ,which has three options",
+      "The imports option is used to import other dependent modules.",
+      "The BrowserModule is required by default for any web based angular application.",
+      "The declarations option is used to define components in the respective module.",
+      "The bootstrap option tells Angular which Component to bootstrap in the application",
+      "exports : If certain module thorough out the components",
+      "Providers : we inject all the services in this ."
     ]
   },
   {
@@ -205,7 +228,11 @@
     "Long_Ans": [
       "ngOnInit: This hook is called after Angular has initialized all data-bound properties of a component. It is commonly used to perform initialization logic, such as fetching initial data from a server.",
       "ngOnDestroy: This hook is called just before Angular destroys the component. It is used to clean up resources, such as unsubscribing from observables or releasing memory.",
-      "ngOnChanges: This hook is called whenever the input properties of a component change. It provides information about the changes and is commonly used to respond to input changes and update the component's state."
+      "ngOnChanges: This hook is called whenever the input properties of a component change. It provides information about the changes and is commonly used to respond to input changes and update the component's state.",
+      "ngDoCheck: This is for the detection and to act on changes that Angular can't or won't detect on its own.",
+      "ngAfterContentInit: This is called in response after Angular projects external content into the component's view.",
+      "ngAfterContentChecked: This is called in response after Angular checks the content projected into the component.",
+      "ngAfterViewInit: This is called in response after Angular initializes the component's views and child views."
     ]
   },
   {
@@ -256,6 +283,9 @@
     "question": "What is Angular Material? How can you integrate Angular Material into an Angular application?",
     "short_Ans": "Angular Material is a UI component library for Angular applications that provides a set of reusable and accessible UI components following the Material Design guidelines. It includes components such as buttons, cards, forms, dialogs, and data tables.",
     "Long_Ans": [
+      "Angular Material is a UI Component library.",
+      "Angular Material helps in creating attractive, consistent, and fully functional web pages as well as applications. ",
+      "It does not while following modern web design principles, including browser portability and graceful degradation.",
       "To integrate Angular Material into an Angular application, developers need to install Angular Material and Angular CDK using npm or yarn.",
       "They can then import the required Angular Material modules in the application's root module (AppModule) and configure the application to use Angular Material components and styles.",
       "Once Angular Material is integrated, developers can use Angular Material components in their application templates by including the corresponding HTML tags and attributes."
@@ -278,7 +308,9 @@
     "Long_Ans": [
       "Angular Universal supports server-side rendering (SSR) of Angular applications, enabling them to be rendered on the server before being sent to the client.",
       "By pre-rendering Angular applications on the server, Angular Universal improves performance by reducing time to first paint (TTFP) and time to interactive (TTI), leading to faster page loads and better user experience.",
-      "Server-side rendering also improves search engine optimization (SEO) by providing search engine crawlers with pre-rendered HTML content, which can be indexed and ranked more effectively."
+      "Server-side rendering also improves search engine optimization (SEO) by providing search engine crawlers with pre-rendered HTML content, which can be indexed and ranked more effectively.",
+      "This is a community driven project and available under @angular/platform-server package.",
+      "Angular Universal is integrated with Angular CLI recently."
     ]
   },
   {
@@ -342,6 +374,1104 @@
       "A minor release is done after every 3 months",
       "A major release is done after every 6 months"
     ]
-  }
+  },
+  {
+    "id": 32,
+    "question": "What are the Advantages of Angular?",
+    "short_Ans": "Angular offers a powerful and versatile framework for building dynamic web applications with features like data binding, dependency injection, and reusable components.",
+    "Long_Ans": [
+      "Component-based Architecture: Angular promotes code reusability and maintainability by structuring applications into well-defined components with clear separation of concerns.",
+      "Two-way Data Binding: Simplifies development by automatically synchronizing data between the view (HTML) and the component logic (TypeScript), reducing boilerplate code.",
+      "Dependency Injection: Provides loose coupling between components and services. Dependencies are injected, making components easier to test and more adaptable.",
+      "TypeScript Support: Leverages TypeScript for type safety, improving code readability, maintainability, and catching errors early in the development process.",
+      "Rich Ecosystem and Community Support: Benefits from a vast ecosystem of libraries, modules, and a large, active developer community providing ongoing support and resources.",
+      "Routing and Navigation: Offers built-in routing capabilities for seamless navigation between different application views, enhancing user experience.",
+      "Performance Optimization: Includes techniques like lazy loading and ahead-of-time (AOT) compilation for faster application loading times and improved overall performance.",
+      "Mobile App Development with Angular Universal: Enables the creation of cross-platform mobile apps using Angular Universal, extending its reach beyond web development."
+    ]
+  },
+  {
+    "id": 33,
+    "question": "What are the Disadvantages of Angular?",
+    "short_Ans": "Angular's complexity, potential for performance overhead, and steeper learning curve can be drawbacks for certain projects.",
+    "Long_Ans": [
+      "Complexity for Smaller Projects: While powerful for large-scale applications, Angular's comprehensive framework can introduce complexity for simpler projects. The overhead of setting up and managing dependencies might outweigh the benefits.",
+      "Potential Performance Overhead: Due to its feature-rich nature, Angular applications can have a larger initial load size compared to simpler frameworks. This can impact performance, especially on slower devices or networks.",
+      "Steeper Learning Curve: For developers unfamiliar with TypeScript and concepts like dependency injection, Angular's learning curve can be steeper compared to some lightweight frameworks. The initial investment in learning can be a hurdle for some projects.",
+      "Limited SEO by Default: Single-page applications built with Angular may face challenges with Search Engine Optimization (SEO) by default. Additional effort is required to ensure search engines can properly crawl and index content within the application.",
+      "Potential Vendor Lock-in: While Angular itself is open-source, relying heavily on specific Angular libraries or tools can create vendor lock-in, making it more difficult to switch to other frameworks in the future."
+    ]
+  },
+  {
+    "id": 34,
+    "question": "What is Bazel Tool",
+    "short_Ans": "Bazel is a powerful build tool developed and massively used by Google and it can keep track of the dependencies between different packages and build targets.",
+    "Long_Ans": [
+      "Bazel is a powerful build tool developed and massively used by Google and it can keep track of the dependencies between different packages and build targets.",
+      "From Angular 8 ,we can build CLI application with Bazel .",
+      "Note : THe Angular framwork is itself built with Bazel"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "What is the default port which Angular apps run on? How can you change it?",
+    "short_Ans": "The default port for Angular development servers is 4200.",
+    "Long_Ans": [
+      "Default Development Port: By default, Angular applications run on port 4200 during development. This port is used by the development server to serve your application's files and communicate with the browser.",
+      "Reasons for Changing the Port:There might be times when you need to change the default port. Here are some common reasons:",
+      "Conflicting Applications:If you have another application already running on port 4200, you'll encounter a conflict. Changing the port allows both applications to run simultaneously.",
+      "Custom Development Server Configuration: In specific development environments, you might need to use a different port to fit your setup.",
+      "Changing the Default Port:You can easily adjust the port number using the `ng serve` command with the `--port` flag:",
+      "Command: `ng serve --port=<new_port_number>`",
+      "Example: `ng serve --port=8080` (This will start the development server on port 8080)"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "What are the default testing frameworks in Angular applications?",
+    "short_Ans": "Angular supports Jasmine for unit testing and Karma as a test runner.",
+    "Long_Ans": [
+      "Angular applications primarily rely on two frameworks for testing:",
+      "Jasmine:A behavior-driven development (BDD) framework that provides a readable syntax for writing unit tests. It focuses on testing individual components and services in isolation.",
+      "Karma:A test runner that executes your unit tests written in Jasmine. It handles setting up the testing environment, running the tests, and reporting the results.",
+      "Protractor - for end to end test scripts ."
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Explain package.json file ",
+    "short_Ans": "package.json is a file that holds essential metadata about your project, including dependencies, scripts, and configuration.",
+    "Long_Ans": [
+      "package.json: The Heart of Your Project",
+      "In any Node.js or JavaScript project, `package.json` is a crucial file that serves several purposes:",
+      "Dependency Management: It lists all the external libraries and modules your project relies on, along with their versions. This allows you to easily install and manage them using a package manager like npm or yarn.",
+      "Project Metadata:It provides essential information about your project, such as the name, version, description, license, authors, and more. This metadata is helpful for documentation and sharing your project with others.",
+      "Scripts:You can define custom scripts to automate repetitive tasks within your project. These scripts can be anything from running tests and building your application to starting a development server.",
+      "Configuration:In some cases, `package.json` can be used to store configuration settings specific to your development environment or build process.",
+      "Example of package.json Usage in Angular:",
+      "As mentioned, you can specify the TypeScript package and its version in `package.json` if your Angular project uses TypeScript. This ensures the correct version of TypeScript is installed for your development environment.",
+      "Additionally, Angular CLI uses `package.json` to store information about project dependencies, scripts for building and running the application, and other project-specific configurations."
+    ]
+  },
+  {
+    "id": 38,
+    "question": "What commands do you use to run tests? Unit test and End to End?",
+    "short_Ans": "Use `ng test` for unit tests and a separate E2E testing framework like Protractor for end-to-end tests.",
+    "Long_Ans": [
+      "Angular provides a convenient way to run unit tests through the Angular CLI:",
+      "  **`ng test`:** This command executes unit tests written with Jasmine and Karma. It sets up the testing environment, runs the tests, and displays the results in the terminal.  This is the primary command for unit testing in Angular projects.",
+      "End-to-End (E2E) Testing we use ng e2e :",
+      "  While Angular doesn't include a built-in framework for E2E testing, popular options like Protractor can be integrated for comprehensive testing. Protractor uses WebDriver to automate browser interactions and simulate user behavior.",
+      "  Running E2E tests typically involves a separate setup process using Protractor and its specific commands. Refer to Protractor's documentation for detailed instructions."
+    ]
+  },
+  {
+    "id": 39,
+    "question": "How do you upgrade Angular Apps",
+    "short_Ans": "Angular CLI simplifies upgrading with the `ng update` command.",
+    "Long_Ans": [
+      "The Angular CLI provides a streamlined process for upgrading Angular applications: ",
+      "  * **`ng update` Command:** This command automates the upgrade process, updating Angular packages and potentially migrating your codebase to align with the latest version's conventions. It identifies necessary changes and guides you through the upgrade steps.",
+      "  * **Benefits:**",
+      "    * **Simplified Process:** `ng update` reduces the manual work involved in upgrades, saving you time and effort.",
+      "    * **Migration Assistance:** The command helps migrate your code to the new Angular version's syntax and best practices.",
+      "    * **Improved Maintainability:** By staying up-to-date with Angular versions, you benefit from bug fixes, performance enhancements, and new features.",
+      "  * **Example:**",
+      "    * To upgrade from Angular 7 to 8, you could use the following command (assuming you want to update both `@angular/cli` and `@angular/core`):",
+      "      `bash    \n      ng update @angular/cli @angular/core \n      `",
+      "    * Remember to check the Angular update guide for specific instructions and potential manual changes required for your upgrade path.",
+      "  * **Important Note:**",
+      "    * While `ng update` is helpful, it's crucial to review the Angular update guide for your target version. The guide provides detailed information about the upgrade process, potential breaking changes, and any manual steps you might need to take to ensure a smooth transition."
+    ]
+  },
+  {
+    "id": 40,
+    "question": "How to convert Typescript into JavaScript",
+    "short_Ans": "TypeScript code is transpiled to JavaScript before browser execution.",
+    "Long_Ans": [
+      "TypeScript and JavaScript: A Compilation Step",
+      "While you write code in TypeScript for Angular applications, it doesn't run directly in the browser. Here's what happens:",
+      " Development with TypeScript: You write code using TypeScript's features like static typing, interfaces, and classes, which enhances code readability and maintainability.",
+      "  Transpilation: During the development process, a tool called a TypeScript compiler (like `tsc`) is used to transpile your TypeScript code into equivalent plain JavaScript code.",
+      "  Browser Execution: The resulting JavaScript files are then understood and executed by the browser, ultimately running your Angular application.",
+      "Benefits of Transpilation:",
+      "  Browser Compatibility: By transpiling to JavaScript, TypeScript ensures your code runs smoothly across different browsers that may not natively support TypeScript features.",
+      "  Improved Maintainability: TypeScript's static typing helps catch errors early during development, leading to more reliable and maintainable code."
+    ]
+  },
+  {
+    "id": 41,
+    "question": "How to find out CLI Version ?",
+    "short_Ans": "ng --version",
+    "Long_Ans": [
+      "The `ng --version` command is a straightforward way to determine the installed version of the Angular CLI on your system."
+    ]
+  },
+  {
+    "id": 42,
+    "question": "What is Linting ?How do you find lint issues in code?",
+    "short_Ans": "ng lint",
+    "Long_Ans": [
+      "Linting is the process of analyzing your code for stylistic errors and potential problems. It's like a static code analysis tool that helps you maintain clean, consistent, and well-formatted code.",
+      "Benefits of Linting:",
+      "  - Early Error Detection: Linting can catch potential errors and stylistic inconsistencies before you run your application, saving you time and effort during debugging.",
+      "  - Improved Code Maintainability: Consistent code formatting and adherence to style guidelines make your code easier to read and understand for yourself and other developers working on the project.",
+      "  - Enforced Best Practices: Linting tools can enforce coding conventions specific to your project or team, promoting a uniform codebase.",
+      "Finding Lint Issues in Angular Code:",
+      "  - The Angular CLI provides the 'ng lint' command to leverage a linter for your Angular project.",
+      "  - Running 'ng lint':"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "How can you get the window height and width in component class?",
+    "short_Ans": "The window object is available across all the components hence we can use window object to get the height and width",
+    "Long_Ans": ["For e.g Height = window.height; Width = window.width;"]
+  },
+  {
+    "id": 44,
+    "question": "Where and How to unsubscribe from Observables?",
+    "short_Ans": "Unsubscribe from Observables in the `ngOnDestroy` lifecycle hook using the `subscription.unsubscribe()` method.",
+    "Long_Ans": [
+      "OnNgDestroy method in the compoent lifecycle",
+      "Subscription.unscribe()"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "How to disable the prefix to any component in Angular CLI command?",
+    "short_Ans": "Use the `--prefix=false` flag with `ng generate component` to create a component without the default prefix.",
+    "Long_Ans": [
+      "The Angular CLI typically adds a prefix (like 'app') to component names by default. To disable this for a specific component, add the `--prefix=false` flag when using the `ng generate component` command.",
+      " `ng generate component <name> --prefix=false` "
+    ]
+  },
+  {
+    "id": 46,
+    "question": "What is NgZone? Optimize an Angular app?",
+    "short_Ans": "NgZone manages asynchronous tasks for efficient change detection in Angular applications.",
+    "Long_Ans": [
+      "NgZone: Managing Asynchronous Tasks",
+      "NgZone is an Angular service built on top of Zone.js, a library that provides a mechanism called zones for managing asynchronous tasks in JavaScript. Zones allow Angular to track the start and completion of asynchronous activities (like promises, timers) and perform necessary actions, such as triggering change detection in your application's components.",
+      "How NgZone Works:",
+      "Global Zone: Zone.js establishes a global zone that encompasses all JavaScript execution in the browser.",
+      "NgZone Fork: Angular creates a forked zone specifically for its own purposes. This forked zone inherits behavior from the global zone but can be further customized.",
+      "Tracking Asynchronous Tasks: NgZone intercepts asynchronous tasks like `setTimeout`, `setInterval`, and promises within its zone. It tracks their execution and triggers change detection in Angular components when necessary.",
+      "Benefits of NgZone:",
+      "Efficient Change Detection: By managing asynchronous tasks, NgZone ensures that Angular's change detection mechanism is triggered only when necessary, improving application performance.",
+      "Improved Control: NgZone provides control over how asynchronous tasks interact with Angular's change detection cycle. This allows for optimization and prevents unnecessary updates.",
+      "Optimizing Angular Applications:",
+      "Optimizing Angular applications involves various techniques to improve performance and user experience. Here are some key strategies:",
+      "Change Detection Optimization:",
+      "Use the `ChangeDetectorRef` to manually control change detection in components.",
+      "Employ techniques like `OnPush` change detection strategy and track changes efficiently.",
+      "Lazy Loading:",
+      "Load modules and components on demand to reduce initial load time.",
+      "Efficient Data Management:",
+      "Use immutable data structures and avoid unnecessary data copies.",
+      "Performance Profiling:",
+      "Identify performance bottlenecks using profiling tools to target specific areas for optimization.",
+      "By understanding NgZone and implementing these optimization strategies, you can create performant and responsive Angular applications."
+    ]
+  },
+  {
+    "id": 47,
+    "question": "What is the default Module Bundler in Angular applications?",
+    "short_Ans": "Web pack",
+    "Long_Ans": [
+      "Web pack",
+      "Other packaging and module bundlers that can be used are Gulp, Babel, Grunt."
+    ]
+  },
+  {
+    "id": 48,
+    "question": "What is ngModule?",
+    "short_Ans": "Class describes how the application parts fit together",
+    "Long_Ans": [
+      "An NgModule Class describes how the application parts fit together",
+      "Every application has at least one NgModule, the root module that we bootstrap to launch the application - appModule"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "What are metadata for ngModule?",
+    "short_Ans": "@NgModule metadata configures compilation and application launch. Key properties include:",
+    "Long_Ans": [
+      "NgModule Metadata: Configuring Your Angular Application",
+      "The @NgModule decorator in Angular accepts a metadata object that provides crucial information about how to compile and launch your application. This metadata object defines various aspects of your module and guides Angular's behavior.",
+      "Key Properties:",
+      "- imports:",
+      "  - This property specifies other Angular modules that your module depends on. These imported modules provide components, directives, pipes, and other functionalities that your module can leverage.",
+      "  - A common example is importing BrowserModule in the root AppModule to enable browser-specific functionalities in your application.",
+      "- declarations:",
+      "  - This property lists all the components, directives, and pipes that belong specifically to your module. These declarations essentially define the building blocks that your module contributes to the application.",
+      "  - Every component, directive, or pipe used within your module template must be declared in this property to ensure proper compilation and recognition by Angular.",
+      "- bootstrap:",
+      "  - This property identifies the root component of your application. When Angular launches the application, it creates an instance of this root component and inserts it into the index.html host web page.",
+      "  - Typically, the root component acts as the main entry point for your application's visual hierarchy."
+    ]
+  },
+  {
+    "id": 50,
+    "question": "How do you create new Module using Angular CLI? ",
+    "short_Ans": "ng g module <module_name>",
+    "Long_Ans": ["ng generate module <module_name>"]
+  },
+  {
+    "id": 51,
+    "question": "How do you export a Component from a Module ?",
+    "short_Ans": "Include the component in the list of exports array.",
+    "Long_Ans": ["Include the component in the list of exports array"]
+  },
+  {
+    "id": 52,
+    "question": "How do you add a new module into App Module ?",
+    "short_Ans": "Include the module in the list of imports to the app.module.ts file.",
+    "Long_Ans": [
+      "Include the module in the list of imports to the app.module.ts file."
+    ]
+  },
+  {
+    "id": 53,
+    "question": "Explain components structure and building blocks?",
+    "short_Ans": "selector , template or templateURl, styles, directives and providers",
+    "Long_Ans": [
+      "selector: — define the name of the HTML element in which our component will live.",
+      "template or templateUrl: — It can be inline string or link an external html file. It allows us to tie logic from our component directly to a view.",
+      "styles: — the styles array for our specific component. We can also link external CSS by styleUrls.",
+      "directives: - another component directives we want to use inside our components. ",
+      "providers: — This is the place we are passing the services that we need insider our components."
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Can Components be nested?",
+    "short_Ans": "Yes We can have multiple components as long as they are clearly mapped to the modules and properly exported",
+    "Long_Ans": [
+      "Yes - components can nested and can be arranged any way as per the project requirement.",
+      "Example name module - component1 - component2"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Explain Angular @Component decorator",
+    "short_Ans": "Using the @component decorator we can define the components constituents like templateUrl,styleUrls, and selector name",
+    "Long_Ans": [
+      "Yes - components can nested and can be arranged any way as per the project requirement.",
+      "Example: @Component(selector: 'app-global-search', templateUrl: /global-search.component.html,styleUrls: ['./global-search.component.scss']})"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "How to generate a new Component from angular CLI ",
+    "short_Ans": "ng g c <component name>",
+    "Long_Ans": [
+      "`ng g c <component name>` we use this command to generate a new Component"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Every Angular Application at least have one Component ? True or False?",
+    "short_Ans": "True",
+    "Long_Ans": [
+      "Every Angular Application at least should have one Component i.e AppComponent"
+    ]
+  },
+  {
+    "id": 58,
+    "question": "What is the difference between constructor and ngOnInit?",
+    "short_Ans": "Constructor is a default method in TypeScript classes for initialization, while ngOnInit is specific to Angular for defining Angular bindings.",
+    "Long_Ans": [
+      "The constructor is a default method provided by TypeScript classes, primarily used for initializing class properties and performing basic setup tasks.",
+      "On the other hand, ngOnInit is a lifecycle hook provided by Angular, specifically designed for Angular-specific initialization tasks. It is called after Angular has initialized the component's data-bound properties, making it suitable for initializing Angular-specific bindings and operations.",
+      "While the constructor is called first during the component's instantiation process, it's important to note that Angular bindings and operations involving the component's view are not fully available at this stage. Therefore, Angular best practices recommend moving Angular-specific initialization logic to the ngOnInit method to ensure that it executes after Angular has fully initialized the component and its view.",
+      "Additionally, ngOnInit is part of the OnInit lifecycle interface in Angular, which components can implement to signal that they intend to perform initialization tasks during this phase of the component lifecycle."
+    ]
+  },
+  {
+    "id": 59,
+    "question": "How to add condition to ngClass?",
+    "short_Ans": "You can add a condition to ngClass using property binding.",
+    "Long_Ans": [
+      "<app-menu-item [item]='menu'",
+      "[ngClass]= `{'vertical-menu': menuService.isVertical }` >",
+      "</app-menu-item>"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "What is RxJS?",
+    "short_Ans": "Reactive Extension for Java Script is a library for composing asynchronous and callback-based code in a functional, reactive style using Observables.",
+    "Long_Ans": [
+      "RxJS is a library for composing asynchronous and callback-based code in a functional, reactive style using Observables.",
+      "Many APls such as HttpClient produce and consume RxJS Observables and also uses operators for processing observables.",
+      "For example, you can import observables and operators for using HttpClient as below",
+      "• import ; Observable, throwError } from 'rxjs';",
+      "• import { catchError, retry } from 'rxjs/operators';"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "What is Subscribing?",
+    "short_Ans": "An Observable instance begins publishing values only when someone subscribes to it.",
+    "Long_Ans": [
+      "An Observable instance begins publishing values only when someone subscribes to it.",
+      "So you need to subscribe by calling the subscribe() method of the instance, passing an observer object to receive the notifications."
+    ]
+  },
+  {
+    "id": 62,
+    "question": "What is an Observable?",
+    "short_Ans": "An Observable is a unique Object similar to a Promise that can help manage async code.",
+    "Long_Ans": [
+      "An Observable is a unique Object similar to a Promise that can help manage async code.",
+      "Observables are not part of the JavaScript language so we need to rely on a popular Observable library called RxJS.",
+      "The Observables are created using using new keyword arguments",
+      "Lets see the simple example of observable,",
+      "import { Observable } from 'rxjs';",
+      " const observable = new Observable(observer => {",
+      "setTimeout (() => {",
+      "observer.next('Hello from a Observable!');",
+      "}, 2000);",
+      ");",
+      "Observables are declarative which provide support for passing messages between publishers and subscribers in your application.",
+      "They are mainly used for event handling, asynchronous programming,and handling multiple values.",
+      "In this case, you define a function for publishing values, but it is not executed until a consumer subscribes to it.",
+      "The subscribed consumer then receives notifications until the function completes, or until they unsubscribe."
+    ]
+  },
+  {
+    "id": 63,
+    "question": "What is an observer?",
+    "short_Ans": "Observer is an interface for a consumer of push-based notifications delivered by an Observable.",
+    "Long_Ans": [
+      "Observer is an interface for a consumer of push-based notifications delivered by an Observable.",
+      "It has below structure,",
+      "interface Observer<T> { • closed?: boolean;• next: (value: T) => void;• error: (err: any) => void;• complete: () => void;",
+      "A handler that implements the Observer interface for receiving observable notifications will be passed as a parameter for observable as below,• myObservable.subscribe(myObserver);"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "What is the difference between promise and observable?",
+    "short_Ans": "Promises execute immediately upon creation, while observables are declarative and start computation upon subscription. Observables provide multiple values over time, centralized error handling, and support for complex applications through chaining and subscription.",
+    "Long_Ans": [
+      "Observable:",
+      "- Declarative: Computation does not start until subscription so that they can be run whenever you need the result",
+      "- Provide multiple values over time",
+      "- Subscribe method is used for error handling which makes centralized and predictable error handling",
+      "- Provides chaining and subscription to handle complex applications",
+      "Promise:",
+      "- Execute immediately on creation",
+      "- Provide only one ",
+      "- Push errors to the child promises",
+      "- Uses only then clause"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "What are observable creation functions?",
+    "short_Ans": "Observable creation functions are provided by RxJS for creating observables from various sources such as promises, events, timers, and Ajax requests.",
+    "Long_Ans": [
+      "RxJS provides creation functions for the process of creating observables from various sources:",
+      "- Create an observable from a promise",
+      "- Create an observable that creates an AJAX request",
+      "- Create an observable from a counter",
+      "- Create an observable from an event"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "What is multicasting?",
+    "short_Ans": "Multicasting is the practice of broadcasting to a list of multiple subscribers in a single execution.",
+    "Long_Ans": [
+      "Multi-casting is the practice of broadcasting to a list of multiple subscribers in a single execution.",
+      "Let's demonstrate the multi-casting feature:",
+      "```javascript",
+      "var source = Rx.Observable.from([1, 2, 3]);",
+      "var subject = new Rx.Subject();",
+      "var multicasted = source.multicast(subject);",
+      "// These are, under the hood, 'subject.subscribe({...})' :",
+      "multicasted.subscribe({",
+      "  next: (v) => console.log('observerA:' + v)",
+      "});",
+      "multicasted.subscribe({",
+      "  next: (v) => console.log('observerB:' + v)",
+      "});",
+      "```"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "How do you perform error handling in observables?",
+    "short_Ans": "Error handling in observables involves specifying an error callback on the observer instead of relying on try/catch blocks, which are ineffective in asynchronous environments.",
+    "Long_Ans": [
+      "You can handle errors by specifying an error callback on the observer instead of relying on try/catch blocks, which are ineffective in asynchronous environments.",
+      "For example, you can define the error callback as below:",
+      "```javascript",
+      "myObservable.subscribe({",
+      "  next: num => console.log('Next num: ' + num),",
+      "  error: err => console.log('Received an error: ' + err)",
+      "});",
+      "```"
+    ]
+  },
 
+  {
+    "id": 68,
+    "question": "What is the short hand notation for subscribe method?",
+    "short_Ans": "The subscribe() method can accept callback function definitions in line for next, error, and complete handlers. This is known as short hand notation or Subscribe method with positional arguments.",
+    "Long_Ans": [
+      "The subscribe() method can accept callback function definitions in line for next, error, and complete handlers. This is known as short hand notation or Subscribe method with positional arguments.",
+      "For example, you can define the subscribe method as below:",
+      "```javascript",
+      "myObservable.subscribe(",
+      "  x => console.log('Observer got a next value: ' + x),",
+      "  err => console.error('Observer got an error: ' + err),",
+      "  () => console.log('Observer completed')",
+      ");",
+      "```"
+    ]
+  },
+  {
+    "id": 69,
+    "question": "What are the utility functions provided by RxJS?",
+    "short_Ans": "RxJS provides various utility functions for creating and working with observables.",
+    "Long_Ans": [
+      "The RxJS library provides the following utility functions for creating and working with observables:",
+      "- Converting existing code for async operations into observables",
+      "- Iterating through the values in a stream",
+      "- Mapping values to different types",
+      "- Filtering streams",
+      "- Composing multiple streams"
+    ]
+  },
+  {
+    "id": 70,
+    "question": "What is Karma and Jasmine?",
+    "short_Ans": "Karma is a test runner tool that allows running tests on browsers and executing Jasmine tests within them. Jasmine is a JavaScript testing framework supporting Behavior-Driven Development (BDD).",
+    "Long_Ans": [
+      "Karma:",
+      "- Karma is a tool used for running tests on browsers. It allows developers to spawn browsers and execute Jasmine tests within them.",
+      "Jasmine:",
+      "- Jasmine is a popular testing framework for JavaScript programming language. It facilitates Behavior-Driven Development (BDD) software development practices, providing a rich set of features for writing and organizing tests."
+    ]
+  },
+  {
+    "id": 71,
+    "question": "How to install Karma using NPM?",
+    "short_Ans": "Karma can be installed using npm after installing Node.js.",
+    "Long_Ans": [
+      "After installing Node.js, you can install the Karma test runner by running the following command:",
+      "```bash",
+      "npm install karma --save-dev",
+      "```"
+    ]
+  },
+  {
+    "id": 72,
+    "question": "How to define a Spec in Jasmine?",
+    "short_Ans": "A spec in Jasmine represents a test case within a test suite. It can be defined by calling the global Jasmine function 'it', which takes a string description and a function containing the test expectations.",
+    "Long_Ans": [
+      "A spec in Jasmine represents a test case within a test suite. It can be defined by calling the global Jasmine function 'it', which, like 'describe', takes a string description and a function containing the test expectations.",
+      "For example, a spec can be defined as follows:",
+      "```javascript",
+      "describe('Suite Name', function() {",
+      "  it('test spec', function() {",
+      "    expect(expression).toEqual(true);",
+      "  });",
+      "});",
+      "```"
+    ]
+  },
+  {
+    "id": 73,
+    "question": "Enlist major matchers available in Jasmine?",
+    "short_Ans": "Jasmine provides several built-in matchers for writing assertions in tests.",
+    "Long_Ans": [
+      "Jasmine provides several built-in matchers for writing assertions in tests. Some of the major matchers include:",
+      "- toBeArray(): Checks if the value is an array",
+      "- toBeArrayOfBooleans(): Checks if the value is an array of booleans",
+      "- toBeFalse(): Checks if the value is false",
+      "- toBeCalculable(): Checks if the value can be calculated",
+      "- toBeOddNumber(): Checks if the value is an odd number",
+      "- toBeEmptyObject(): Checks if the value is an empty object",
+      "- any.after(date): Checks if the value is any date after the specified date",
+      "For a complete list of Jasmine matchers, please refer to the GitHub Jasmine Matchers list."
+    ]
+  },
+  {
+    "id": 74,
+    "question": "What is a headless browser?",
+    "short_Ans": "A headless browser is a browser without a graphical user interface (GUI), providing automated control of web pages via a command-line interface or network communication.",
+    "Long_Ans": [
+      "A headless browser is a browser without any kind of graphical user interface (GUI). It allows for automated control of web pages similar to popular web browsers but is operated through a command-line interface or network communication.",
+      "Headless browsers are especially useful for various tasks, such as examining web pages, as they can render and understand HTML just like a regular browser would. This includes rendering styling components such as page layout, color, font selection, and executing JavaScript and AJAX, which may not be possible with other testing methods."
+    ]
+  },
+  {
+    "id": 75,
+    "question": "What is the purpose of the base href tag?",
+    "short_Ans": "The base href tag is used in routing applications to specify the base URL for resolving relative URLs.",
+    "Long_Ans": [
+      "The base href tag is an HTML element used in web pages, particularly in routing applications, to specify the base URL for all relative URLs within the document. It provides a reference point for the browser to resolve relative URLs when navigating between different routes or pages.",
+      "The primary purpose of the base href tag is to ensure that all relative URLs are resolved correctly according to the specified base URL, regardless of the current route or page location. By setting the base href value appropriately, developers can ensure that navigation within the application works as expected and that resources such as stylesheets, scripts, and images are loaded from the correct locations.",
+      "In Angular applications, for example, the base href tag is typically added to the index.html file as the first child of the <head> element. The value of the base href attribute should reflect the base URL of the application, such as '/' for the root directory or '/myapp/' for a subdirectory named 'myapp'. This ensures that all relative URLs are resolved relative to the specified base URL."
+    ]
+  },
+  {
+    "id": 76,
+    "question": "What are the router imports?",
+    "short_Ans": "Router imports refer to the components imported from the '@angular/router' library that are necessary for defining and configuring routes in Angular applications.",
+    "Long_Ans": [
+      "Router imports in Angular applications are necessary for defining and configuring routes, which represent specific component views for given URLs. These imports are part of the '@angular/router' library and include components and utilities required for implementing routing functionality.",
+      "The primary router imports typically used in Angular applications include:",
+      "RouterModule: The RouterModule is a module provided by Angular's router library that enables routing functionality within the application. It provides directives such as 'RouterOutlet' and 'RouterLink' for rendering views and navigating between routes.",
+      "Routes: The Routes interface is used to define the routes of the application. It consists of an array of route definitions, each specifying a URL path and the corresponding component to be rendered when the path is matched.",
+      "These router imports are essential for setting up routing in Angular applications and are commonly imported in the app module or feature modules where routing configuration is defined. By importing these modules and interfaces, developers can create and manage routes to enable navigation within their applications.",
+      "For example, in the app module, we import RouterModule and Routes as follows:",
+      "```typescript",
+      "import { RouterModule, Routes } from '@angular/router';",
+      "```"
+    ]
+  },
+  {
+    "id": 77,
+    "question": "What is router outlet?",
+    "short_Ans": "A RouterOutlet is a directive provided by the Angular router library, serving as a placeholder in the template where the router should display components for that outlet.",
+    "Long_Ans": [
+      "A RouterOutlet is a directive provided by the Angular router library, serving as a placeholder in the template where the router should display components for that outlet. It acts as a viewport for dynamically loading routed components based on the current URL.",
+      "Key points about RouterOutlet:",
+      "1. Placeholder: RouterOutlet marks the spot in the template where the router should render components corresponding to the current route.",
+      "2. Dynamic Loading: As the user navigates through the application, Angular's router dynamically loads and displays components within the RouterOutlet based on the matched route.",
+      "3. Component Display: Routed components, which correspond to specific URLs, are rendered within the RouterOutlet directive in the template.",
+      "4. Usage: RouterOutlet is used in the template like any other Angular directive, typically within the layout component or a specific view component where routing is required.",
+      "Example Usage:",
+      "```html",
+      "<router-outlet></router-outlet>",
+      "<!-- Routed components go here -->",
+      "```",
+      "In this example, the <router-outlet></router-outlet> directive is placed in the template to indicate where the routed components should be displayed."
+    ]
+  },
+  {
+    "id": 78,
+    "question": "What are router links?",
+    "short_Ans": "Router links are directives provided by Angular's router library, enabling navigation control over anchor elements in templates.",
+    "Long_Ans": [
+      "Router links are directives provided by Angular's router library, enabling navigation control over anchor elements in templates. They allow users to navigate between different views or components within an Angular application.",
+      "Key points about router links:",
+      "1. Directive: RouterLink is a directive applied to anchor (<a>) tags in Angular templates to provide navigation functionality.",
+      "2. Navigation Paths: Router links specify the destination URLs or routes to navigate to when the corresponding anchor element is clicked.",
+      "3. Fixed Paths: RouterLink directive accepts string values representing fixed navigation paths within the application.",
+      "4. Usage: In the template, anchor elements with the routerLink directive define clickable links that trigger route changes when clicked by the user.",
+      "Example Usage:",
+      "```html",
+      "<h1>Angular Router</h1>",
+      "<nav>",
+      "  <a routerLink=\"/todosList\">List of todos</a>",
+      "  <a routerLink=\"/completed\">Completed todos</a>",
+      "</nav>",
+      "<router-outlet></router-outlet>",
+      "```",
+      "In this example, the <a> tags with the routerLink directive specify navigation paths to different views within the application. When clicked, these links trigger route changes, rendering the corresponding components in the <router-outlet>."
+    ]
+  },
+  {
+    "id": 79,
+    "question": "What are active router links?",
+    "short_Ans": "Active router links are router links that toggle CSS classes based on the current router state, indicating whether the link is active or inactive.",
+    "Long_Ans": [
+      "Active router links are router links that toggle CSS classes based on the current router state, indicating whether the link is active or inactive. This functionality is provided by the RouterLinkActive directive in Angular.",
+      "Key points about active router links:",
+      "1. Directive: RouterLinkActive is a directive used to apply CSS classes to router links based on the current router state.",
+      "2. Toggle Classes: RouterLinkActive adds specified CSS classes when the associated router link is active and removes them when the link is inactive.",
+      "3. Indication of State: The presence of these CSS classes visually indicates to users which route or view is currently active in the application's navigation.",
+      "4. Usage: In the template, RouterLinkActive directive is applied to router links along with the routerLink directive to dynamically manage the CSS classes based on the router state.",
+      "Example Usage:",
+      "```html",
+      "<h1>Angular Router</h1>",
+      "<nav>",
+      "  <a routerLink=\"/todosList\" routerLinkActive=\"active\">List of todos</a>",
+      "  <a routerLink=\"/completed\" routerLinkActive=\"active\">Completed todos</a>",
+      "</nav>",
+      "<router-outlet></router-outlet>",
+      "```",
+      "In this example, the RouterLinkActive directive is applied to router links for 'List of todos' and 'Completed todos'. When the associated routes are active, the 'active' CSS class is added to the links, providing visual indication of the active state."
+    ]
+  },
+  {
+    "id": 80,
+    "question": "What is router state?",
+    "short_Ans": "RouterState is a hierarchical representation of activated routes in an Angular application, containing information about consumed URL segments, extracted parameters, and resolved data.",
+    "Long_Ans": [
+      "RouterState is a hierarchical representation of activated routes in an Angular application, containing information about consumed URL segments, extracted parameters, and resolved data.",
+      "Key points about router state:",
+      "1. Tree Structure: RouterState forms a tree-like structure, with each node representing an activated route along the navigation hierarchy.",
+      "2. Route Information: Each node in the RouterState tree holds details about the consumed URL segments, parameters extracted from the URL, and any resolved data associated with the route.",
+      "3. Accessibility: The current RouterState can be accessed from any component or service within the Angular application using the Router service and its routerState property.",
+      "4. Navigation Context: RouterState provides a context for navigation within the application, allowing components to access route-related information and react accordingly.",
+      "Example Usage:",
+      "```typescript",
+      "@Component({templateUrl: template.html})",
+      "class MyComponent {",
+      "  constructor(router: Router) {",
+      "    const state: RouterState = router.routerState;",
+      "    const root: ActivatedRoute = state.root;",
+      "    const child = root.firstChild;",
+      "    const id: Observable<string> = child.params.map(p => p.id);",
+      "    //...",
+      "  }",
+      "}",
+      "```",
+      "In this example, the current RouterState is accessed within a component using the Router service. The RouterState tree is traversed to extract information about the activated route and its parameters."
+    ]
+  },
+  {
+    "id": 81,
+    "question": "What are router events?",
+    "short_Ans": "Router events are emitted by the Router during navigation, providing a sequence of lifecycle events for tracking the route lifecycle.",
+    "Long_Ans": [
+      "Router events are emitted by the Router during navigation, providing a sequence of lifecycle events for tracking the route lifecycle.",
+      "Key points about router events:",
+      "1. Navigation Lifecycle: Router events represent various stages of the navigation process, allowing developers to track and respond to changes in the route lifecycle.",
+      "2. Emits Sequence: The Router.events property emits a sequence of events during navigation, starting from NavigationStart and ending with NavigationEnd, with intermediate events like RouteConfigLoadStart, GuardsCheckStart, etc.",
+      "3. Comprehensive Tracking: By subscribing to router events, developers can monitor route configuration loading, guard checks, activation of route components, and resolution of data associated with routes.",
+      "4. Error Handling: Router events also include events like NavigationError and NavigationCancel, which enable error handling and cancellation of navigation.",
+      "Example Usage:",
+      "```typescript",
+      "import { Router, NavigationStart, NavigationEnd, NavigationError, NavigationCancel } from '@angular/router';",
+      "",
+      "class MyComponent {",
+      "  constructor(private router: Router) {",
+      "    router.events.subscribe(event => {",
+      "      if (event instanceof NavigationStart) {",
+      "        // Handle navigation start event",
+      "      } else if (event instanceof NavigationEnd) {",
+      "        // Handle navigation end event",
+      "      } else if (event instanceof NavigationError) {",
+      "        // Handle navigation error event",
+      "      } else if (event instanceof NavigationCancel) {",
+      "        // Handle navigation cancel event",
+      "      }",
+      "    });",
+      "  }",
+      "}",
+      "```",
+      "In this example, router events are subscribed to within a component. Depending on the type of event emitted, different actions can be taken, such as handling navigation start, end, error, or cancellation."
+    ]
+  },
+  {
+    "id": 82,
+    "question": "What is activated route?",
+    "short_Ans": "The ActivatedRoute provides information about a route associated with a component loaded in a router outlet.",
+    "Long_Ans": [
+      "The ActivatedRoute provides information about a route associated with a component loaded in a router outlet.",
+      "Key points about ActivatedRoute:",
+      "1. Route Information: ActivatedRoute contains details about the currently activated route, such as route parameters, query parameters, and route data.",
+      "2. Accessing Route Data: Developers can access route information like parameters, URL segments, and resolved data by injecting ActivatedRoute as a service.",
+      "3. Traversing Router State: ActivatedRoute can also be used to traverse the router state tree, enabling navigation and access to parent and child routes.",
+      "Example Usage:",
+      "```typescript",
+      "import { ActivatedRoute } from '@angular/router';",
+      "",
+      "@Component({",
+      "  ...",
+      "})",
+      "class MyComponent {",
+      "  constructor(private route: ActivatedRoute) {",
+      "    const id = this.route.params.pipe(map(params => params.id));",
+      "    const url = this.route.url.pipe(map(segments => segments.join('/')));",
+      "    const user = this.route.data.pipe(map(data => data.user));",
+      "  }",
+      "}",
+      "```",
+      "In this example, ActivatedRoute is injected into the component's constructor to access route parameters, URL segments, and resolved data."
+    ]
+  },
+  {
+    "id": 83,
+    "question": "How do you define routes?",
+    "short_Ans": "Routes in Angular are defined using the RouterModule.forRoot() method.",
+    "Long_Ans": [
+      "To define routes in Angular, you first create an array of route definitions. Each route definition specifies a path and the component to display when that path is matched.",
+      "Here's an example of how to define routes:",
+      "```typescript",
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Routes } from '@angular/router';",
+      "import { TodosListComponent } from './todos-list.component';",
+      "import { TodoDetailComponent } from './todo-detail.component';",
+      "import { PageNotFoundComponent } from './page-not-found.component';",
+      "",
+      "const appRoutes: Routes = [",
+      "  { path: 'todo/:id', component: TodoDetailComponent },",
+      "  { path: 'todos', component: TodosListComponent },",
+      "  { path: '', redirectTo: '/todos', pathMatch: 'full' },",
+      "  { path: '**', component: PageNotFoundComponent }",
+      "];",
+      "",
+      "@NgModule({",
+      "  imports: [",
+      "    RouterModule.forRoot(",
+      "      appRoutes,",
+      "      { enableTracing: true } // <-- debugging purposes only",
+      "    )",
+      "    // other imports here",
+      "  ],",
+      "  exports: [RouterModule]",
+      "})",
+      "export class AppRoutingModule { }",
+      "```",
+      "In this example, we define several routes using the Routes array. Then, we import RouterModule and call its forRoot() method with our route definitions. We also provide an optional configuration object, such as enableTracing for debugging purposes. Finally, we export the RouterModule to make it available for use in other parts of the application."
+    ]
+  },
+  {
+    "id": 84,
+    "question": "What is the purpose of Wildcard route?",
+    "short_Ans": "Wildcard routes match URLs that don't correspond to any predefined routes.",
+    "Long_Ans": [
+      "The purpose of a wildcard route in Angular is to handle URLs that don't match any predefined routes. Instead of crashing the application with an error when a URL doesn't match any route, Angular uses the wildcard route to handle such cases gracefully.",
+      "A wildcard route is defined with a path consisting of two asterisks (**), which acts as a catch-all for any URL that doesn't match other routes.",
+      "For example, you can define a PageNotFoundComponent to be displayed when a wildcard route is matched:",
+      "```typescript",
+      "{ path: '**', component: PageNotFoundComponent }",
+      "```",
+      "With this wildcard route, if the user navigates to a URL that doesn't match any other routes defined in the application, Angular will display the PageNotFoundComponent, providing a user-friendly way to handle unexpected URLs."
+    ]
+  },
+  {
+    "id": 85,
+    "question": "Do I need a Routing Module always?",
+    "short_Ans": "No, using a Routing Module is optional.",
+    "Long_Ans": [
+      "Using a Routing Module in your Angular application is not mandatory. It's a design choice based on the complexity of your routing configuration and the organization of your code.",
+      "You can choose not to create a separate Routing Module, especially when the routing configuration is simple. In such cases, you can merge the routing configuration directly into the companion module, typically the AppModule.",
+      "However, it is recommended to use a Routing Module when your application's routing configuration becomes more complex. This is especially true when you need to include specialized guard and resolver services, as a Routing Module helps in organizing and managing these concerns effectively."
+    ]
+  },
+  {
+    "id": 86,
+    "question": "What are the differences between Components and Directives?",
+    "short_Ans": "In short, a component is a directive-with-a-template.",
+    "Long_Ans": [
+      "Directives:",
+      "- To register directives, we use the @Directive decorator.",
+      "- Directive is used to add behavior to an existing DOM element.",
+      "- Directive is used to design reusable components.",
+      "- Many directives can be used per DOM element.",
+      "- Directive doesn't use View.",
+      "",
+      "Components:",
+      "- To register a component, we use the @Component decorator.",
+      "- Components are typically used to create UI widgets.",
+      "- Component is used to break up the application into smaller components.",
+      "- Only one component can be present per DOM element.",
+      "- @View decorator or templateUrl/template are mandatory for components."
+    ]
+  },
+  {
+    "id": 87,
+    "question": "What is the purpose of ngFor directive?",
+    "short_Ans": "The ngFor directive is used to iterate over a list and render each item in the list.",
+    "Long_Ans": [
+      "The ngFor directive in Angular is used in templates to iterate over a collection (such as an array or an object) and render each item in the collection.",
+      "For example, in the template, we can use ngFor to loop through a list of users:",
+      "<ul>",
+      "  <li *ngFor=\"let user of users\">{{ user.name }}</li>",
+      "</ul>",
+      "This will generate a list item for each user in the 'users' array, displaying the name of each user."
+    ]
+  },
+  {
+    "id": 88,
+    "question": "What is the purpose of ngIf directive?",
+    "short_Ans": "The ngIf directive is used to conditionally render elements based on a boolean expression.",
+    "Long_Ans": [
+      "The ngIf directive in Angular is used to conditionally display or hide elements in the template based on a boolean expression.",
+      "For example, we can use ngIf to display a message if the user's age is more than 18:",
+      "<p *ngIf=\"user.age > 18\">You are not eligible for student pass!</p>",
+      "In this example, the paragraph element will only be rendered if the expression 'user.age > 18' evaluates to true."
+    ]
+  },
+  {
+    "id": 89,
+    "question": "How do you create directives using CLI?",
+    "short_Ans": "You can use the CLI command ng generate directive to create a directive class file.",
+    "Long_Ans": [
+      "To create a directive using the Angular CLI, you can use the following command:",
+      "```bash",
+      "ng generate directive directive-name",
+      "```",
+      "This command generates the directive class file in the source folder (src/app/directive-name.directive.ts), along with the respective test file (directive-name.directive.spec.ts). Additionally, it declares the directive class in the root module of the application."
+    ]
+  },
+  {
+    "id": 90,
+    "question": "Give an example for attribute directives?",
+    "short_Ans": "Attribute directives are created and applied to elements as attributes.",
+    "Long_Ans": [
+      "Here's an example of creating and applying an attribute directive for highlighting behavior:",
+      "1. Create a HighlightDirective class in the file src/app/highlight.directive.ts. Import Directive from the core library to apply metadata and ElementRef in the directive's constructor to inject a reference to the host DOM element.",
+      "2. Apply the attribute directive as an attribute to the host element.",
+      "3. Run the application to see the highlight behavior on the paragraph element."
+    ]
+  },
+  {
+    "id": 91,
+    "question": "What is HttpClient?",
+    "short_Ans": "HttpClient is a simplified client HTTP API provided by Angular for communication with backend services over HTTP protocol.",
+    "Long_Ans": [
+      "Front-end applications often communicate with backend services over HTTP protocol using either XMLHttpRequest interface or the fetch() API.",
+      "Angular simplifies this process with its HttpClient, which is based on top of the XMLHttpRequest interface.",
+      "HttpClient provides a more user-friendly and streamlined way to make HTTP requests and handle responses in Angular applications.",
+      "It is available from the @angular/common/http package."
+    ]
+  },
+  {
+    "id": 92,
+    "question": "What are HttpClient benefits?",
+    "short_Ans": "HttpClient offers testability features, typed request and response objects, intercepts for requests and responses, supports Observable APIs, and provides streamlined error handling.",
+    "Long_Ans": [
+      "Testability features: HttpClient facilitates easier testing of HTTP requests and responses in Angular applications.",
+      "Typed request and response objects: HttpClient provides type checking for both request and response objects, making it easier to work with data.",
+      "Intercept request and response: It allows intercepting and modifying HTTP requests and responses, enabling features like caching, logging, and authentication.",
+      "Supports Observalbe APIs: HttpClient works seamlessly with RxJS Observables, allowing for easy handling of asynchronous data streams.",
+      "Streamlined error handling: HttpClient provides built-in mechanisms for handling errors in HTTP requests, making error management more straightforward."
+    ]
+  },
+  {
+    "id": 93,
+    "question": "Explain on how to use HttpClient with an example?",
+    "short_Ans": "To use HttpClient, first import it into the root module, then inject it into the application. Finally, create a component to subscribe to the service.",
+    "Long_Ans": [
+      "To use HttpClient in an Angular application, follow these steps:",
+      "1. Import the HttpClientModule into the root module (typically AppModule) to make HttpClient available throughout the application.",
+      "2. Inject the HttpClient service into the component or service where you want to make HTTP requests. This is usually done through constructor injection.",
+      "3. Use the HttpClient's methods (such as get(), post(), put(), delete(), etc.) to make HTTP requests to the server. These methods return Observables, which you can subscribe to in order to handle the response data.",
+      "Here's an example of how to use HttpClient in an Angular component:",
+      "```typescript",
+      "import { Component, OnInit } from '@angular/core';",
+      "import { HttpClient } from '@angular/common/http';",
+      "",
+      "@Component({",
+      "  selector: 'app-example',",
+      "  templateUrl: './example.component.html',",
+      "  styleUrls: ['./example.component.css']",
+      "})",
+      "export class ExampleComponent implements OnInit {",
+      "  constructor(private http: HttpClient) { }",
+      "",
+      "  ngOnInit(): void {",
+      "    this.http.get<any>('https://api.example.com/data')",
+      "      .subscribe(",
+      "        (response) => {",
+      "          console.log('Response:', response);",
+      "        },",
+      "        (error) => {",
+      "          console.error('Error:', error);",
+      "        }",
+      "      );",
+      "  }",
+      "}",
+      "```"
+    ]
+  },
+  {
+    "id": 94,
+    "question": "How can you read full response?",
+    "short_Ans": "Use the observe option from HttpClient to get the full response.",
+    "Long_Ans": [
+      "To read the full response including headers and status code, you can use the observe option from HttpClient. By default, HttpClient only returns the response body, but using the observe option set to 'response' allows you to access the full HTTP response, including the headers and status code.",
+      "Here's an example of how to use the observe option to get the full response:",
+      "```typescript",
+      "import { Injectable } from '@angular/core';",
+      "import { HttpClient, HttpResponse } from '@angular/common/http';",
+      "import { Observable } from 'rxjs';",
+      "import { User } from './user.model';",
+      "",
+      "@Injectable({",
+      "  providedIn: 'root'",
+      "})",
+      "export class UserService {",
+      "  constructor(private http: HttpClient) { }",
+      "",
+      "  getUser(): Observable"
+    ]
+  },
+  {
+    "id": 95,
+    "question": "How do you perform Error handling?",
+    "short_Ans": "Handle errors using the error callback in the subscribe method.",
+    "Long_Ans": [
+      "When using HttpClient, if a request fails either due to issues on the server or network problems, HttpClient will return an error object instead of a successful response. To handle these errors, you can use the error callback in the subscribe method when subscribing to an Observable returned by HttpClient.",
+      "Here's an example of how error handling can be performed in a component using HttpClient:",
+      "```typescript",
+      "fetchUser() {",
+      "  this.userService.getProfile().subscribe(",
+      "    (data: User) => {",
+      "      this.userProfile = {...data }; // success path",
+      "    },",
+      "    error => {",
+      "      this.error = error; // error path",
+      "    }",
+      "  );",
+      "}",
+      "```"
+    ]
+  },
+  {
+    "id": 96,
+    "question": "What is a parameterized pipe?",
+    "short_Ans": "A pipe that accepts optional parameters to customize its output.",
+    "Long_Ans": [
+      "A parameterized pipe in Angular is a type of pipe that accepts optional parameters to customize its output. These parameters can be used to fine-tune the behavior of the pipe and produce the desired output.",
+      "Parameterized pipes are created by declaring the pipe name followed by a colon (:) and then specifying the parameter value. If a pipe accepts multiple parameters, they are separated by colons.",
+      "For example, consider a pipe for formatting a birthday date with a specific format (dd/MM/yyyy):",
+      "```typescript",
+      "import { Component } from '@angular/core';",
+      "@Component({",
+      "  selector: 'app-birthday',",
+      "  template: '<p>Birthday is {{ birthday | date:'dd/MM/yyyy' }}</p>' // 18/06/1987",
+      "})",
+      "export class BirthdayComponent {",
+      "  birthday = new Date(1987, 6, 18);",
+      "}",
+      "```"
+    ]
+  },
+  {
+    "id": 97,
+    "question": "How do you chain pipes?",
+    "short_Ans": "Pipes can be chained together by applying one pipe after another to the same expression.",
+    "Long_Ans": [
+      "Chaining pipes in Angular allows you to apply multiple transformations to the same expression in a convenient and efficient way.",
+      "To chain pipes, you simply apply one pipe after another to the same expression, with each pipe separated by the pipe character (|). The output of the first pipe becomes the input to the second pipe, and so on.",
+      "For example, consider chaining the date and uppercase pipes to format a birthday property:",
+      "```typescript",
+      "import { Component } from '@angular/core';",
+      "@Component({",
+      "  selector: 'app-birthday',",
+      "  template: '<p>Birthday is {{ birthday | date: 'fullDate' | uppercase }}</p>' // Thursday, June 18, 1987",
+      "})",
+      "export class BirthdayComponent {",
+      "  birthday = new Date(1987, 6, 18);",
+      "}",
+      "```"
+    ]
+  },
+  {
+    "id": 98,
+    "question": "What is a custom pipe?",
+    "short_Ans": "A custom pipe is a user-defined transformation function that can be applied to data in a template using Angular's pipe functionality.",
+    "Long_Ans": [
+      "A custom pipe in Angular is a user-defined transformation function that can be applied to data in a template using Angular's pipe functionality.",
+      "Key characteristics of a custom pipe:",
+      "- A custom pipe is a class decorated with pipe metadata using the @Pipe decorator, which is imported from the core Angular library.",
+      "- The pipe class implements the PipeTransform interface's transform method, which accepts an input value followed by optional parameters and returns the transformed value.",
+      "- The @Pipe decorator allows you to define the pipe name that you'll use within template expressions. It must be a valid JavaScript identifier.",
+      "For example, here's the structure of a custom pipe:",
+      "```typescript",
+      "import { Pipe, PipeTransform } from '@angular/core';",
+      "@Pipe({",
+      "  name: 'customPipeName'",
+      "})",
+      "export class CustomPipe implements PipeTransform {",
+      "  transform(value: any, ...args: any[]): any {",
+      "    // Implement custom transformation logic here",
+      "  }",
+      "}",
+      "```"
+    ]
+  },
+  {
+    "id": 99,
+    "question": "Give an example of custom pipe?",
+    "short_Ans": "A custom pipe allows you to create reusable transformation functions for data in Angular templates. Here's an example of a custom pipe that calculates file size based on an extension:",
+    "Long_Ans": [
+      "A custom pipe in Angular allows you to create reusable transformation functions for data in templates. Here's an example of a custom pipe that calculates file size based on an extension:",
+      "```typescript",
+      "import { Pipe, PipeTransform } from '@angular/core';",
+      "@Pipe({ name: 'customFileSizePipe' })",
+      "export class FileSizePipe implements PipeTransform {",
+      "  transform(size: number, extension: string = 'MB'): string {",
+      "    return (size / (1024 * 1024)).toFixed(2) + extension;",
+      "  }",
+      "}",
+      "```",
+      "In this example, the custom pipe 'customFileSizePipe' takes a number representing the file size in bytes and an optional extension (defaulted to 'MB'). It divides the size by 1024*1024 to convert it to megabytes and returns the result with the specified extension."
+    ]
+  },
+  {
+    "id": 100,
+    "question": "What is the difference between pure and impure pipe?",
+    "short_Ans": "Pure pipes are called only when Angular detects a change in the input value or parameters, while impure pipes are called for every change detection cycle.",
+    "Long_Ans": [
+      "Pure and impure pipes differ in how and when they are executed by Angular:",
+      "- A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe. This includes changes to primitive input values (String, Number, Boolean, Symbol) or changes in object references (Date, Array, Function, Object).",
+      "- An impure pipe, on the other hand, is called for every change detection cycle, regardless of whether the value or parameters have changed. This means that an impure pipe is called frequently, potentially on every keystroke or mouse-move event."
+    ]
+  },
+  {
+    "id": 101,
+    "question": "What happens if you use script tag inside template?",
+    "short_Ans": "Angular recognizes script tags as unsafe and sanitizes them to prevent script injection attacks. The script tag is removed, but safe content remains.",
+    "Long_Ans": [
+      "When you use a ‹script> tag inside an Angular template, Angular recognizes it as potentially unsafe content. As a security measure, Angular automatically sanitizes the value, which involves removing the script tag while preserving safe content, such as the text content of the script tag.",
+      "This sanitization process helps prevent script injection attacks by removing potentially harmful script elements.",
+      "If you attempt to use a script tag inside a template, Angular will ignore it and issue a warning in the browser console to alert developers about the potential security risk.",
+      "For example, if you bind a user-controlled value to the innerHTML property, such as htm|Snippet = 'Template < script>alert(\"Owned\")</script> <b>Syntax</b>', Angular will sanitize the value to prevent script injection vulnerabilities."
+    ]
+  },
+  {
+    "id": 102,
+    "question": "What is interpolation?",
+    "short_Ans": "Interpolation is a syntax in Angular represented by double curly braces ({}) that converts into property binding. It replaces the braces and the expression inside with the string value of the corresponding component property.",
+    "Long_Ans": [
+      "Interpolation is a special syntax in Angular that converts into property binding. It provides a convenient way to bind data from the component class to the template.",
+      "Interpolation is represented by double curly braces ({}). The text between the braces is often the name of a component property. Angular replaces that name with the string value of the corresponding component property when rendering the template.",
+      "For example, if you have a component property named 'title' and 'url', you can use interpolation to display their values in the template like this:",
+      "<h3> {{ title }}</h3>",
+      "<img src=\"{{ 'https://www.tektutorialshub.com/wp-content/uploads/2020/03/Angular-Interpolation-Example.png' }}\" style=\"height:40px \">"
+    ]
+  },
+  {
+    "id": 103,
+    "question": "What are template expressions?",
+    "short_Ans": "Template expressions in Angular are similar to JavaScript expressions. They produce values that Angular assigns to properties of binding targets, such as HTML elements, components, or directives. Template expressions are enclosed in double curly braces in interpolation syntax or appear in quotes to the right of the = symbol in property binding.",
+    "Long_Ans": [
+      "Template expressions in Angular resemble JavaScript expressions. They generate values that Angular then assigns to properties of binding targets such as HTML elements, components, or directives.",
+      "In property binding, a template expression is enclosed in quotes to the right of the = symbol, as in [property]='expression'.",
+      "In interpolation syntax, template expressions are surrounded by double curly braces, as in {{ expression }}.",
+      "For example, in the interpolation below, the template expression is {{ username }}:",
+      "<h3>{{ username }}, welcome to Angular</h3>"
+    ]
+  },
+  {
+    "id": 104,
+    "question": "What are template statements?",
+    "short_Ans": "Template statements in Angular respond to events raised by binding targets such as elements, components, or directives. They are enclosed in quotes to the right of the = symbol, like (event)='statement'.",
+    "Long_Ans": [
+      "Template statements in Angular are used to respond to events raised by binding targets such as elements, components, or directives.",
+      "In template syntax, template statements are enclosed in quotes to the right of the = symbol, as in (event)='statement'.",
+      "For example, the following button element uses a template statement to respond to a click event:",
+      "<button (click)='editProfile()'>Edit Profile</button>"
+    ]
+  },
+  {
+    "id": 105,
+    "question": "How do you categorize data binding types?",
+    "short_Ans": "Data binding types can be categorized into three categories based on the direction of data flow: from the source to the view (one-way), from the view to the source (one-way), and view-to-source-to-view (two-way).",
+    "Long_Ans": [
+      "Data binding types in Angular are categorized based on the direction of data flow. There are three main categories: from the source to the view (one-way binding), from the view to the source (one-way binding), and view-to-source-to-view (two-way binding).",
+      "The syntax for each type of data binding depends on its direction of data flow. For example, one-way binding from the source to the view can be achieved using interpolation, property binding, attribute binding, class binding, or style binding syntax.",
+      "Similarly, one-way binding from the view to the source is typically done using event binding syntax.",
+      "Two-way binding, which allows data to flow both from the view to the source and vice versa, is achieved using the banana-in-a-box syntax [(target)]='expression' or bindon-target='expression'."
+    ]
+  }
+  
+  
+  
+  
+  
+  
 ]
