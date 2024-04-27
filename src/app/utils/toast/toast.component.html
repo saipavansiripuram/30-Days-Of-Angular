@@ -9,15 +9,18 @@
                     </svg>
                 </button>
             </div>
-            <div class="ms-4 me-5">
+            <!-- <div class="ms-4 me-5"> -->
+                <div class="ms-2 me-2">
                 <h3 class="text-gray-800 font-medium text-sm dark:text-white">
                     <span class="font-semibold">{{ title }}</span>
                 </h3>
                 <div class="mt-1 text-sm text-gray-600 dark:text-gray-400 text-justify px-2">
-                     <ul class="list-disc whitespace-normal break-words ">
+                    <div class="overflow-y-auto overflow-hidden  max-h-48 md:max-h-fit">
+                     <ul class=" whitespace-normal break-word list-inside list-decimal ">
                         <li *ngFor="let point of message">{{ point }}</li>
                     </ul>
                 </div>
+            </div>
                 <!-- Additional content can go here -->
             </div>
         </div>

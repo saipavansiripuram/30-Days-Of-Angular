@@ -4,7 +4,9 @@
     "question": "What is Angular?",
     "short_Ans": "Angular is a front-end framework developed by Google for building web applications.",
     "Long_Ans": [
-      "Angular is based on TypeScript and provides features like two-way data binding, dependency injection, and modular architecture.",
+      "Angular is a TypeScript-based open-source web application framework developed and maintained by Google. ",
+      "It Offers an easy and powerful way of building front and web-based applications.",
+      "Angular is based on TypeScript and provides features like two-way data binding, dependency injection,declerative templates,end-to-end tooling and modular architecture.",
       "It facilitates the development of single-page applications (SPAs) and supports the creation of reusable components."
     ]
   },
@@ -13,10 +15,17 @@
     "question": "What are the key features of Angular?",
     "short_Ans": "Angular offers features such as two-way data binding, dependency injection, modular architecture, and comprehensive testing capabilities.",
     "Long_Ans": [
+      "Component: These are the basic building blocks of Angular application to control HTML Views",
+      "Modules : An angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as module which perform a single task. ",
+      "Directives allow you to manipulate the DOM, attach event listeners, and apply dynamic behavior to elements, enhancing the functionality and interactivity of Angular applications.",
+      "Templates : This represent the views of an Angular application.",
+      "Services: It is used to create components which can be shared across entire application.",
+      "Routing : Angular Router provides features like route configuration, parameterized routes, lazy loading, and guards for protecting routes.",
       "Two-way data binding allows automatic synchronization between the model and the view.",
+      "Metadata : This can be used to add more data to an Angular class ",
       "Dependency injection promotes code maintainability, testability, and modularity by managing object creation and injection.",
       "Modular architecture enables the development of large-scale applications by organizing code into reusable and manageable modules.",
-      "Comprehensive testing capabilities include unit testing, integration testing, and end-to-end testing using tools like Jasmine, Karma, and Protractor."
+      "Testing : Comprehensive testing capabilities include unit testing, integration testing, and end-to-end testing using tools like Jasmine, Karma, and Protractor."
     ]
   },
   {
@@ -25,7 +34,16 @@
     "short_Ans": "AngularJS refers to the first version of Angular (1.x), while Angular encompasses versions 2 and above.",
     "Long_Ans": [
       "AngularJS uses JavaScript, whereas Angular is based on TypeScript.",
-      "Angular introduced significant improvements over AngularJS, including improved performance, better tooling support, and enhanced features such as the component-based architecture."
+      "Angular introduced significant improvements over AngularJS, including improved performance, better tooling support, and enhanced features such as the component-based architecture.",
+      "Architecture - AngularJS supports the MVC design Model.Angular relies on Components and directives Instead.",
+      "Dependency Injection (DI) - Angular supports a hierarchical Dependency Injection with unidirectional tree-based change detection. AngularJS doesn't support DI",
+      "Expression Syntax - In Angular Js, a specific ng directive is required for the image or property and an event. Angular, on the other hand,use () and [] for binding an event and accomplshing property binding,respectively",
+      "Mobile Support - AngularJS doesn't have mobile support while Angular does have",
+      "Recommended Language - While JavaScript is the recommended language for AngularJS, TypeScript is the recommended language for Angular",
+      "Routing - For routing, AngularJS uses Srouteprovider.when() whereas Angular uses @RouteConfig/(...)} ",
+      "Speed - Development effort and time are significantly reduced in AngularJS due to two-way data binding. However, Angular offers faster performance thanks to upgraded features.",
+      "Structure - With a simplified structure, Angular makes the development and maintenance of large applications easier. Comparatively, AngularJS has a less manageable structure",
+      "Support - No official support or updates are available for the AngulariS. On the contrary, Angular has active support with updates rolling out every now and then."
     ]
   },
   {
@@ -70,8 +88,17 @@
     "question": "What is dependency injection in Angular?",
     "short_Ans": "Dependency injection is a design pattern in Angular used to manage the creation and injection of dependent objects into a component or service.",
     "Long_Ans": [
-      "Angular's dependency injection system allows components and services to declare their dependencies, which are then provided by Angular's injector.",
-      "Dependency injection promotes loose coupling, testability, and code reusability by decoupling the creation of objects from their usage."
+      "In Angular, DI promotes loose coupling by providing dependencies rather than creating them within the class itself.",
+      "Benefits of DI include:",
+      "  - Loose Coupling: Makes components and services more flexible and testable.",
+      "  - Testability: Dependencies can be easily mocked or replaced during unit testing.",
+      "  - Maintainability: Improves code modularity and separation of concerns.",
+      "  - Flexibility: The application can adapt to different environments by changing how dependencies are provided.",
+      "DI works through providers, injectors, and injection methods:",
+      "  - Providers: Register dependencies with Angular, specifying how to create and inject them.",
+      "  - Injectors: Use a hierarchical system to find and provide registered dependencies.",
+      "  - Injection Methods: Angular supports constructor injection (most common) and setter injection.",
+      "Understanding DI is crucial for building well-structured and maintainable Angular applications."
     ]
   },
   {
@@ -304,6 +331,16 @@
       "HostListener: Used to listen for DOM events on host elements and execute a specified method when the event occurs.",
       "HostBinding: Used to bind a property of the host element to a property of the directive or component class.",
       "ViewChild and ViewChildren: Used to query and access child components or elements in Angular templates."
+    ]
+  },
+  {
+    "id": 31,
+    "question": "What is the current Angular Version?",
+    "short_Ans": "The latest stable version of Angular is 17.3.6, which was released on April 25, 2024",
+    "Long_Ans": [
+      "Angular 17 as of 2023",
+      "A minor release is done after every 3 months",
+      "A major release is done after every 6 months"
     ]
   }
 
